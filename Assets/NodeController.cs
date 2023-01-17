@@ -14,6 +14,9 @@ public class NodeController : MonoBehaviour
     public GameObject nodeUp;
     public GameObject nodeDown;
 
+    public bool isWarpRightNode = false;
+    public bool isWarpLeftNode = false;
+
     // Start is called before the first frame update
     void Start()
     {
