@@ -38,9 +38,12 @@ public class EnemyController : MonoBehaviour
 
     public bool readyToLeaveHome = false;
 
+    public GameManager gameManager;
+
     // Start is called before the first frame update
     void Awake()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         movementController = GetComponent<MovementController>();
         // Start red ghost on the start node
         if (ghostType == GhostType.red)
@@ -67,6 +70,7 @@ public class EnemyController : MonoBehaviour
             startingNode = ghostNodeRight;
         }
         movementController.currentNode = startingNode;
+        transform.position = startingNode.transform.position;
     }
 
     // Update is called once per frame
@@ -80,6 +84,10 @@ public class EnemyController : MonoBehaviour
         if (ghostNodeState == GhostNodeStatesEnum.movingInNodes)
         {
             // Determine next game mode to go to
+            if (ghostType == GhostType.red)
+            {
+                DetermineRedGhostDirection();
+            }
         }
         else if (ghostNodeState == GhostNodeStatesEnum.respawning)
         {
@@ -116,5 +124,103 @@ public class EnemyController : MonoBehaviour
                 }
             }
         }
+    }
+
+    // Determine the direction of the red ghost
+    void DetermineRedGhostDirection()
+    {
+        string direction = GetClosestDirection(gameManager.pacman.transform.position);
+        movementController.setDirection(direction);
+    }
+
+    // Determine the direction of the pink ghost
+    void DeterminePinkGhostDirection()
+    {
+
+    }
+
+    // Determine the direction of the blue ghost
+    void DetermineBlueGhostDirection()
+    {
+
+    }
+
+    // Determine the direction of the orange ghost
+    void DetermineOrangeGhostDirection()
+    {
+
+    }
+
+    // Determines the ghost's closest direction to Pacman
+    string GetClosestDirection(Vector2 target)
+    {
+        float shortestDistance = 0;
+        string lastMovingDirection = movementController.lastMovingDirection;
+        string newDirection = "";
+
+        NodeController nodeController = movementController.currentNode.GetComponent<NodeController>();
+
+        // If we can move up and we aren't reversing
+        if (nodeController.canMoveUp && lastMovingDirection != "down")
+        {
+            // Get the node above us
+            GameObject nodeUp = nodeController.nodeUp;
+            // Get the distance between our top node and Pacman
+            float distance = Vector2.Distance(nodeUp.transform.position, target);
+
+            // If this is the shortest distance so far, set our direction
+            if (distance < shortestDistance || shortestDistance == 0)
+            {
+                shortestDistance = distance;
+                newDirection = "up";
+            }
+        }
+
+        if (nodeController.canMoveDown && lastMovingDirection != "up")
+        {
+            // Get the node below us
+            GameObject nodeDown = nodeController.nodeDown;
+            // Get the distance between our top node and Pacman
+            float distance = Vector2.Distance(nodeDown.transform.position, target);
+
+            // If this is the shortest distance so far, set our direction
+            if (distance < shortestDistance || shortestDistance == 0)
+            {
+                shortestDistance = distance;
+                newDirection = "down";
+            }
+        }
+
+        if (nodeController.canMoveLeft && lastMovingDirection != "right")
+        {
+            // Get the node to the left of us
+            GameObject nodeLeft = nodeController.nodeLeft;
+            // Get the distance between our top node and Pacman
+            float distance = Vector2.Distance(nodeLeft.transform.position, target);
+
+            // If this is the shortest distance so far, set our direction
+            if (distance < shortestDistance || shortestDistance == 0)
+            {
+                shortestDistance = distance;
+                newDirection = "left";
+            }
+        }
+
+        if (nodeController.canMoveRight && lastMovingDirection != "left")
+        {
+            // Get the node to the right of us
+            GameObject nodeRight = nodeController.nodeRight;
+            // Get the distance between our top node and Pacman
+            float distance = Vector2.Distance(nodeRight.transform.position, target);
+
+            // If this is the shortest distance so far, set our direction
+            if (distance < shortestDistance || shortestDistance == 0)
+            {
+                shortestDistance = distance;
+                newDirection = "right";
+            }
+        }
+
+        return newDirection;
     }
 }

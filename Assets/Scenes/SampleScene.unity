@@ -1605,6 +1605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1332ac2f6fcf94643a8c4f54755c5c7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pacman: {fileID: 1104143537}
   leftWarpNode: {fileID: 1672715956}
   rightWarpNode: {fileID: 777131584}
   siren: {fileID: 72051336}
@@ -40551,7 +40552,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d5d24cc7f7f842b4db9345d3e36c32e0, type: 3}
   m_Color: {r: 0.98039216, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -40577,7 +40578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   currentNode: {fileID: 0}
-  speed: 0.3
+  speed: 1
   direction: 
   lastMovingDirection: 
   canWarp: 1
@@ -40595,7 +40596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghostNodeState: 0
-  ghostType: 3
+  ghostType: 0
   ghostNodeLeft: {fileID: 504626535}
   ghostNodeRight: {fileID: 1169470022}
   ghostNodeCenter: {fileID: 17646538}
@@ -40603,6 +40604,7 @@ MonoBehaviour:
   movementController: {fileID: 0}
   startingNode: {fileID: 0}
   readyToLeaveHome: 1
+  gameManager: {fileID: 0}
 --- !u!4 &1568530268
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject pacman;
+
     public GameObject leftWarpNode;
     public GameObject rightWarpNode;
 
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
         
     }
 
+    // Adds score to amount and sets text to display the score
     public void AddToScore(int amount)
     {
         score += amount;
@@ -38,6 +41,7 @@ public class GameManager : MonoBehaviour
 
     public void CollectedPellet(NodeController nodeController)
     {
+        // Alternate between munch audio sources every time a pellet is collected
         if (currentMunch == 0)
         {
             munch1.Play();
@@ -49,9 +53,8 @@ public class GameManager : MonoBehaviour
             currentMunch = 0;
         }
 
+        // Add ten to the score every time a pellet is collected
         AddToScore(10);
-
-        // Add to our score
 
         // Check if there are any pellets left
 
