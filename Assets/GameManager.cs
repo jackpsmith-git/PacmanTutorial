@@ -15,12 +15,20 @@ public class GameManager : MonoBehaviour
     public AudioSource munch1;
     public AudioSource munch2;
     public int currentMunch = 0;
+
     public int score;
     public TMP_Text scoreText;
+
+    public GameObject ghostNodeLeft;
+    public GameObject ghostNodeRight;
+    public GameObject ghostNodeCenter;
+    public GameObject ghostNodeStart;
 
     // Start is called before the first frame update
     void Awake()
     {
+        ghostNodeStart.GetComponent<NodeController>().isGhostStartingNode = true;
+        pacman = GameObject.Find("Player");
         score = 0;
         currentMunch = 0;
         siren.Play();

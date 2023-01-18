@@ -68,6 +68,13 @@ public class MovementController : MonoBehaviour
             // Otherwise, find the next node we are going to be moving towards
             else
             {
+                // If we are not a ghost that is respawning, and we are on the start node, and we are trying to move down, stop
+                if (currentNodeController.isGhostStartingNode && direction == "down" 
+                    && (!isGhost || GetComponent<EnemyController>().ghostNodeState != EnemyController.GhostNodeStatesEnum.respawning))
+                {
+                    direction = lastMovingDirection;
+                }
+
                 // Get the next node from out node controller using our current direction
                 GameObject newNode = currentNodeController.GetNodeFromDirection(direction);
 
