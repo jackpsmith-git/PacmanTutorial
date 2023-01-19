@@ -155,7 +155,7 @@ Transform:
   m_Children:
   - {fileID: 402247015}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 265
+  m_RootOrder: 263
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4126714
 BoxCollider2D:
@@ -210,6 +210,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &4703711
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +298,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &5565483
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,7 +415,7 @@ Transform:
   m_Children:
   - {fileID: 769742787}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 273
+  m_RootOrder: 271
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &9012471
 BoxCollider2D:
@@ -468,6 +470,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &9476637
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +558,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &17646538
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +620,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!61 &17646541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -729,6 +734,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &27987059
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +906,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &31648986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,6 +1078,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &38035172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1195,7 @@ Transform:
   m_Children:
   - {fileID: 1514314489}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 272
+  m_RootOrder: 270
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &40321951
 BoxCollider2D:
@@ -1242,6 +1250,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &54024529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1338,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &55133821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,7 +1539,7 @@ Transform:
   m_Children:
   - {fileID: 1014523261}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 278
+  m_RootOrder: 276
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &59529344
 BoxCollider2D:
@@ -1584,6 +1594,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &72051333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,6 +1640,11 @@ MonoBehaviour:
   ghostNodeRight: {fileID: 1169470022}
   ghostNodeCenter: {fileID: 17646538}
   ghostNodeStart: {fileID: 1279414144}
+  redGhost: {fileID: 1568530264}
+  pinkGhost: {fileID: 730935108}
+  blueGhost: {fileID: 201203788}
+  orangeGhost: {fileID: 1891567151}
+  currentGhostMode: 0
 --- !u!4 &72051335
 Transform:
   m_ObjectHideFlags: 0
@@ -1642,7 +1658,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &72051336
 AudioSource:
@@ -2019,6 +2035,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &75637536
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2291,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &91284737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,7 +2556,7 @@ GameObject:
   - component: {fileID: 94185406}
   - component: {fileID: 94185407}
   m_Layer: 0
-  m_Name: Node(Clone)
+  m_Name: 2
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2557,8 +2575,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 618509575}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 248
+  m_Father: {fileID: 1893653956}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &94185406
 BoxCollider2D:
@@ -2613,6 +2631,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &98168455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +2971,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &110701842
 GameObject:
   m_ObjectHideFlags: 0
@@ -3459,6 +3479,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &136178222
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,6 +3651,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &144278383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3801,6 +3823,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &145495945
 GameObject:
   m_ObjectHideFlags: 0
@@ -3888,6 +3911,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &146319620
 GameObject:
   m_ObjectHideFlags: 0
@@ -3975,6 +3999,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &156383585
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,6 +4171,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &158910702
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,6 +4427,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &174109738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4488,6 +4515,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &177577632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4743,6 +4771,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &192614933
 GameObject:
   m_ObjectHideFlags: 0
@@ -4914,6 +4943,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &193882827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,6 +5028,170 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &201203788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 201203793}
+  - component: {fileID: 201203792}
+  - component: {fileID: 201203791}
+  - component: {fileID: 201203790}
+  - component: {fileID: 201203789}
+  m_Layer: 0
+  m_Name: Blue
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &201203789
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201203788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0072904825, y: -0.014580965}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3563755, y: 1.4876032}
+  m_EdgeRadius: 0
+--- !u!212 &201203790
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201203788}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: d5d24cc7f7f842b4db9345d3e36c32e0, type: 3}
+  m_Color: {r: 0.019607844, g: 0.98039216, b: 0.98039216, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.1, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &201203791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201203788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc9c0a0454d5345a95bc2fb916ae55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  currentNode: {fileID: 0}
+  speed: 3
+  direction: 
+  lastMovingDirection: 
+  canWarp: 1
+  isGhost: 1
+--- !u!114 &201203792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201203788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefd930382860c146a6db0c3bd0d608d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostNodeState: 0
+  respawnState: 0
+  ghostType: 1
+  ghostNodeLeft: {fileID: 504626535}
+  ghostNodeRight: {fileID: 1169470022}
+  ghostNodeCenter: {fileID: 17646538}
+  ghostNodeStart: {fileID: 1279414144}
+  movementController: {fileID: 0}
+  startingNode: {fileID: 0}
+  readyToLeaveHome: 0
+  gameManager: {fileID: 0}
+  testRespawn: 0
+  isFrightened: 0
+  scatterNodes:
+  - {fileID: 726176943}
+  - {fileID: 94185403}
+  - {fileID: 1775121219}
+  - {fileID: 1466766275}
+  scatterNodeIndex: 0
+--- !u!4 &201203793
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201203788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.61, y: 0.26, z: -0.038145456}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 916072048}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &203916576
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,6 +5279,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &213839472
 GameObject:
   m_ObjectHideFlags: 0
@@ -5340,6 +5535,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &222103684
 GameObject:
   m_ObjectHideFlags: 0
@@ -5427,6 +5623,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &230086718
 GameObject:
   m_ObjectHideFlags: 0
@@ -5514,6 +5711,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &231109402
 GameObject:
   m_ObjectHideFlags: 0
@@ -5601,6 +5799,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &232874371
 GameObject:
   m_ObjectHideFlags: 0
@@ -5856,6 +6055,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &239873083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5943,6 +6143,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &240371154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,6 +6231,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &242619034
 GameObject:
   m_ObjectHideFlags: 0
@@ -6062,8 +6264,9 @@ Transform:
   - {fileID: 1579633931}
   - {fileID: 783145759}
   - {fileID: 1413966429}
+  - {fileID: 1893653956}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &245695551
 GameObject:
@@ -6236,6 +6439,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &253967049
 GameObject:
   m_ObjectHideFlags: 0
@@ -6407,6 +6611,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &266801541
 GameObject:
   m_ObjectHideFlags: 0
@@ -6662,6 +6867,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &270468310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6749,6 +6955,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &271595587
 GameObject:
   m_ObjectHideFlags: 0
@@ -7088,6 +7295,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &292837318
 GameObject:
   m_ObjectHideFlags: 0
@@ -7259,6 +7467,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &300313635
 GameObject:
   m_ObjectHideFlags: 0
@@ -7346,6 +7555,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &308227725
 GameObject:
   m_ObjectHideFlags: 0
@@ -7601,6 +7811,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &332792785
 GameObject:
   m_ObjectHideFlags: 0
@@ -7717,7 +7928,7 @@ Transform:
   m_Children:
   - {fileID: 721544440}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 281
+  m_RootOrder: 279
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &340597090
 BoxCollider2D:
@@ -7772,6 +7983,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &344201915
 GameObject:
   m_ObjectHideFlags: 0
@@ -7943,6 +8155,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &352214665
 GameObject:
   m_ObjectHideFlags: 0
@@ -8030,6 +8243,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &354258320
 GameObject:
   m_ObjectHideFlags: 0
@@ -8369,6 +8583,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &367272263
 GameObject:
   m_ObjectHideFlags: 0
@@ -8876,6 +9091,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &392757345
 GameObject:
   m_ObjectHideFlags: 0
@@ -9047,6 +9263,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &402247014
 GameObject:
   m_ObjectHideFlags: 0
@@ -9386,6 +9603,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &413192316
 GameObject:
   m_ObjectHideFlags: 0
@@ -9557,6 +9775,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &414398026
 GameObject:
   m_ObjectHideFlags: 0
@@ -9644,6 +9863,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &415580714
 GameObject:
   m_ObjectHideFlags: 0
@@ -10067,6 +10287,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &429651501
 GameObject:
   m_ObjectHideFlags: 0
@@ -10238,6 +10459,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &446346997
 GameObject:
   m_ObjectHideFlags: 0
@@ -10409,6 +10631,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &447312273
 GameObject:
   m_ObjectHideFlags: 0
@@ -10664,6 +10887,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &449532437
 GameObject:
   m_ObjectHideFlags: 0
@@ -10751,6 +10975,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &455602019
 GameObject:
   m_ObjectHideFlags: 0
@@ -10863,6 +11088,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &455965133
 GameObject:
   m_ObjectHideFlags: 0
@@ -11118,6 +11344,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &471103709
 GameObject:
   m_ObjectHideFlags: 0
@@ -11373,6 +11600,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &489945723
 GameObject:
   m_ObjectHideFlags: 0
@@ -11460,6 +11688,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &494669784
 GameObject:
   m_ObjectHideFlags: 0
@@ -11547,6 +11776,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &498854829
 GameObject:
   m_ObjectHideFlags: 0
@@ -11579,7 +11809,7 @@ Transform:
   m_Children:
   - {fileID: 1984562763}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 249
+  m_RootOrder: 247
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &498854832
 BoxCollider2D:
@@ -11634,6 +11864,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &500724176
 GameObject:
   m_ObjectHideFlags: 0
@@ -11721,6 +11952,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &504626535
 GameObject:
   m_ObjectHideFlags: 0
@@ -11766,6 +11998,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!61 &504626537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11840,7 +12073,7 @@ Transform:
   m_Children:
   - {fileID: 1749995343}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 260
+  m_RootOrder: 258
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &508540635
 BoxCollider2D:
@@ -11895,6 +12128,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &508890098
 GameObject:
   m_ObjectHideFlags: 0
@@ -12066,6 +12300,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &510280787
 GameObject:
   m_ObjectHideFlags: 0
@@ -12098,7 +12333,7 @@ Transform:
   m_Children:
   - {fileID: 1921754499}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 257
+  m_RootOrder: 255
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &510280790
 BoxCollider2D:
@@ -12153,6 +12388,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &510806209
 GameObject:
   m_ObjectHideFlags: 0
@@ -12408,6 +12644,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -12579,6 +12816,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &523453285
 GameObject:
   m_ObjectHideFlags: 0
@@ -12666,6 +12904,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &526769008
 GameObject:
   m_ObjectHideFlags: 0
@@ -12698,7 +12937,7 @@ Transform:
   m_Children:
   - {fileID: 656803756}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 270
+  m_RootOrder: 268
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &526769011
 BoxCollider2D:
@@ -12753,6 +12992,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &531213638
 GameObject:
   m_ObjectHideFlags: 0
@@ -13176,6 +13416,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &551015427
 GameObject:
   m_ObjectHideFlags: 0
@@ -13263,6 +13504,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &553947851
 GameObject:
   m_ObjectHideFlags: 0
@@ -13350,6 +13592,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &565243632
 GameObject:
   m_ObjectHideFlags: 0
@@ -13521,6 +13764,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &567529023
 GameObject:
   m_ObjectHideFlags: 0
@@ -13692,6 +13936,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &576128835
 GameObject:
   m_ObjectHideFlags: 0
@@ -13779,6 +14024,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &578089547
 GameObject:
   m_ObjectHideFlags: 0
@@ -13950,6 +14196,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &585115144
 GameObject:
   m_ObjectHideFlags: 0
@@ -14205,6 +14452,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &591595796
 GameObject:
   m_ObjectHideFlags: 0
@@ -14544,6 +14792,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &606081642
 GameObject:
   m_ObjectHideFlags: 0
@@ -14660,7 +14909,7 @@ Transform:
   m_Children:
   - {fileID: 192614934}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 279
+  m_RootOrder: 277
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &606217428
 BoxCollider2D:
@@ -14715,6 +14964,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &606888394
 GameObject:
   m_ObjectHideFlags: 0
@@ -14802,6 +15052,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &611274542
 GameObject:
   m_ObjectHideFlags: 0
@@ -14834,7 +15085,7 @@ Transform:
   m_Children:
   - {fileID: 1482563963}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 282
+  m_RootOrder: 280
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &611274545
 BoxCollider2D:
@@ -14889,6 +15140,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &616690457
 GameObject:
   m_ObjectHideFlags: 0
@@ -15228,6 +15480,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &631200597
 GameObject:
   m_ObjectHideFlags: 0
@@ -15399,6 +15652,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &634926803
 GameObject:
   m_ObjectHideFlags: 0
@@ -15431,7 +15685,7 @@ Transform:
   m_Children:
   - {fileID: 2133288078}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 245
+  m_RootOrder: 244
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &634926806
 BoxCollider2D:
@@ -15486,6 +15740,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &639217243
 GameObject:
   m_ObjectHideFlags: 0
@@ -15825,6 +16080,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &649327447
 GameObject:
   m_ObjectHideFlags: 0
@@ -15996,6 +16252,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &656803755
 GameObject:
   m_ObjectHideFlags: 0
@@ -16167,6 +16424,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &661311029
 GameObject:
   m_ObjectHideFlags: 0
@@ -16199,7 +16457,7 @@ Transform:
   m_Children:
   - {fileID: 960824286}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 266
+  m_RootOrder: 264
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &661311032
 BoxCollider2D:
@@ -16254,6 +16512,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &662886123
 GameObject:
   m_ObjectHideFlags: 0
@@ -16340,6 +16599,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &671030448
 GameObject:
   m_ObjectHideFlags: 0
@@ -17015,6 +17275,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &686334122
 GameObject:
   m_ObjectHideFlags: 0
@@ -17131,7 +17392,7 @@ Transform:
   m_Children:
   - {fileID: 940305921}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 256
+  m_RootOrder: 254
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &689659215
 BoxCollider2D:
@@ -17186,6 +17447,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &690478932
 GameObject:
   m_ObjectHideFlags: 0
@@ -17273,6 +17535,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &692498783
 GameObject:
   m_ObjectHideFlags: 0
@@ -17305,7 +17568,7 @@ Transform:
   m_Children:
   - {fileID: 213971474}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 251
+  m_RootOrder: 249
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &692498786
 BoxCollider2D:
@@ -17360,6 +17623,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &699768523
 GameObject:
   m_ObjectHideFlags: 0
@@ -17531,6 +17795,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &708932592
 GameObject:
   m_ObjectHideFlags: 0
@@ -17675,6 +17940,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!61 &712331454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17797,7 +18063,7 @@ GameObject:
   - component: {fileID: 726176946}
   - component: {fileID: 726176947}
   m_Layer: 0
-  m_Name: Node(Clone)
+  m_Name: 1
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17816,8 +18082,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1364243194}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 244
+  m_Father: {fileID: 1893653956}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &726176946
 BoxCollider2D:
@@ -17872,6 +18138,171 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
+--- !u!1 &730935108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 730935113}
+  - component: {fileID: 730935112}
+  - component: {fileID: 730935111}
+  - component: {fileID: 730935110}
+  - component: {fileID: 730935109}
+  m_Layer: 0
+  m_Name: Pink
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &730935109
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730935108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0072904825, y: -0.014580965}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3563755, y: 1.4876032}
+  m_EdgeRadius: 0
+--- !u!212 &730935110
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730935108}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: d5d24cc7f7f842b4db9345d3e36c32e0, type: 3}
+  m_Color: {r: 0.98039216, g: 0.5568628, b: 0.88235295, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.1, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &730935111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730935108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc9c0a0454d5345a95bc2fb916ae55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  currentNode: {fileID: 0}
+  speed: 3
+  direction: 
+  lastMovingDirection: 
+  canWarp: 1
+  isGhost: 1
+--- !u!114 &730935112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730935108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefd930382860c146a6db0c3bd0d608d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostNodeState: 0
+  respawnState: 0
+  ghostType: 2
+  ghostNodeLeft: {fileID: 504626535}
+  ghostNodeRight: {fileID: 1169470022}
+  ghostNodeCenter: {fileID: 17646538}
+  ghostNodeStart: {fileID: 1279414144}
+  movementController: {fileID: 0}
+  startingNode: {fileID: 0}
+  readyToLeaveHome: 0
+  gameManager: {fileID: 0}
+  testRespawn: 0
+  isFrightened: 0
+  scatterNodes:
+  - {fileID: 726176943}
+  - {fileID: 94185403}
+  - {fileID: 1775121219}
+  - {fileID: 1466766275}
+  scatterNodeIndex: 0
+--- !u!4 &730935113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730935108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.26, z: -0.038145456}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1302402572}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &731407689
 GameObject:
   m_ObjectHideFlags: 0
@@ -18127,6 +18558,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &741511892
 GameObject:
   m_ObjectHideFlags: 0
@@ -18243,7 +18675,7 @@ Transform:
   m_Children:
   - {fileID: 1528468673}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 284
+  m_RootOrder: 281
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &743051514
 BoxCollider2D:
@@ -18298,6 +18730,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &747369727
 GameObject:
   m_ObjectHideFlags: 0
@@ -18469,6 +18902,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &748729463
 GameObject:
   m_ObjectHideFlags: 0
@@ -18808,6 +19242,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &767371945
 GameObject:
   m_ObjectHideFlags: 0
@@ -19092,7 +19527,7 @@ Transform:
   m_Children:
   - {fileID: 2140131399}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 262
+  m_RootOrder: 260
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &770405263
 BoxCollider2D:
@@ -19147,6 +19582,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &771193034
 GameObject:
   m_ObjectHideFlags: 0
@@ -19375,6 +19811,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!61 &777131587
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19488,6 +19925,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &780778256
 GameObject:
   m_ObjectHideFlags: 0
@@ -19575,6 +20013,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &783145758
 GameObject:
   m_ObjectHideFlags: 0
@@ -20036,6 +20475,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &799305854
 GameObject:
   m_ObjectHideFlags: 0
@@ -20291,6 +20731,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &811048617
 GameObject:
   m_ObjectHideFlags: 0
@@ -20462,6 +20903,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &819924468
 GameObject:
   m_ObjectHideFlags: 0
@@ -20549,6 +20991,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &820565121
 GameObject:
   m_ObjectHideFlags: 0
@@ -20888,6 +21331,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &834301308
 GameObject:
   m_ObjectHideFlags: 0
@@ -21143,6 +21587,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &848490057
 GameObject:
   m_ObjectHideFlags: 0
@@ -21230,6 +21675,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &850867956
 GameObject:
   m_ObjectHideFlags: 0
@@ -21653,6 +22099,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &868310028
 GameObject:
   m_ObjectHideFlags: 0
@@ -21740,6 +22187,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &873212173
 GameObject:
   m_ObjectHideFlags: 0
@@ -21827,6 +22275,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &887538812
 GameObject:
   m_ObjectHideFlags: 0
@@ -21914,6 +22363,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &889343960
 GameObject:
   m_ObjectHideFlags: 0
@@ -22001,6 +22451,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &897297439
 GameObject:
   m_ObjectHideFlags: 0
@@ -22088,6 +22539,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &898910358
 GameObject:
   m_ObjectHideFlags: 0
@@ -22120,7 +22572,7 @@ Transform:
   m_Children:
   - {fileID: 797172747}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 267
+  m_RootOrder: 265
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &898910361
 BoxCollider2D:
@@ -22175,6 +22627,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &902396182
 GameObject:
   m_ObjectHideFlags: 0
@@ -22346,6 +22799,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &902800946
 GameObject:
   m_ObjectHideFlags: 0
@@ -22517,6 +22971,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &914133810
 GameObject:
   m_ObjectHideFlags: 0
@@ -22604,6 +23059,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &914540938
 GameObject:
   m_ObjectHideFlags: 0
@@ -22688,6 +23144,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &916072047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 916072048}
+  - component: {fileID: 916072049}
+  m_Layer: 0
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &916072048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916072047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 201203793}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &916072049
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916072047}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: caa934f51b56cee4c8c4acd0f052a8bd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 0.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &919032515
 GameObject:
   m_ObjectHideFlags: 0
@@ -22720,7 +23260,7 @@ Transform:
   m_Children:
   - {fileID: 1112857467}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 254
+  m_RootOrder: 252
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &919032518
 BoxCollider2D:
@@ -22775,6 +23315,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &919217264
 GameObject:
   m_ObjectHideFlags: 0
@@ -22946,6 +23487,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &923092923
 GameObject:
   m_ObjectHideFlags: 0
@@ -23117,6 +23659,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &940305920
 GameObject:
   m_ObjectHideFlags: 0
@@ -23456,6 +23999,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &964024906
 GameObject:
   m_ObjectHideFlags: 0
@@ -23627,6 +24171,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &970422455
 GameObject:
   m_ObjectHideFlags: 0
@@ -23882,6 +24427,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &974362921
 GameObject:
   m_ObjectHideFlags: 0
@@ -23969,6 +24515,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &976749231
 GameObject:
   m_ObjectHideFlags: 0
@@ -24140,6 +24687,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &982986238
 GameObject:
   m_ObjectHideFlags: 0
@@ -24227,6 +24775,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &983427385
 GameObject:
   m_ObjectHideFlags: 0
@@ -24314,6 +24863,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &983865543
 GameObject:
   m_ObjectHideFlags: 0
@@ -24401,6 +24951,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &983902429
 GameObject:
   m_ObjectHideFlags: 0
@@ -24571,6 +25122,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &988512904
 GameObject:
   m_ObjectHideFlags: 0
@@ -24825,6 +25377,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &990320322
 GameObject:
   m_ObjectHideFlags: 0
@@ -24996,6 +25549,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &991565580
 GameObject:
   m_ObjectHideFlags: 0
@@ -25167,6 +25721,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &995642066
 GameObject:
   m_ObjectHideFlags: 0
@@ -25199,7 +25754,7 @@ Transform:
   m_Children:
   - {fileID: 923092924}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 252
+  m_RootOrder: 250
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &995642069
 BoxCollider2D:
@@ -25254,6 +25809,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &997745922
 GameObject:
   m_ObjectHideFlags: 0
@@ -25341,6 +25897,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &998444768
 GameObject:
   m_ObjectHideFlags: 0
@@ -25428,6 +25985,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1003595339
 GameObject:
   m_ObjectHideFlags: 0
@@ -25515,6 +26073,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1003706511
 GameObject:
   m_ObjectHideFlags: 0
@@ -25602,6 +26161,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1014523260
 GameObject:
   m_ObjectHideFlags: 0
@@ -26025,6 +26585,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1030189021
 GameObject:
   m_ObjectHideFlags: 0
@@ -26448,6 +27009,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1055739058
 GameObject:
   m_ObjectHideFlags: 0
@@ -26535,6 +27097,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1058697954
 GameObject:
   m_ObjectHideFlags: 0
@@ -26567,7 +27130,7 @@ Transform:
   m_Children:
   - {fileID: 1197406711}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 259
+  m_RootOrder: 257
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1058697957
 BoxCollider2D:
@@ -26622,6 +27185,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1065803567
 GameObject:
   m_ObjectHideFlags: 0
@@ -26961,6 +27525,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1088178629
 GameObject:
   m_ObjectHideFlags: 0
@@ -27384,6 +27949,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1097291602
 GameObject:
   m_ObjectHideFlags: 0
@@ -27555,6 +28121,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1099138553
 GameObject:
   m_ObjectHideFlags: 0
@@ -27642,6 +28209,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1101622914
 GameObject:
   m_ObjectHideFlags: 0
@@ -27840,7 +28408,7 @@ Transform:
   m_Children:
   - {fileID: 1576123770}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1112857466
 GameObject:
@@ -27958,7 +28526,7 @@ Transform:
   m_Children:
   - {fileID: 565243633}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 258
+  m_RootOrder: 256
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1118463339
 BoxCollider2D:
@@ -28013,6 +28581,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1121415678
 GameObject:
   m_ObjectHideFlags: 0
@@ -28100,6 +28669,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1125247933
 GameObject:
   m_ObjectHideFlags: 0
@@ -28187,6 +28757,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1125934309
 GameObject:
   m_ObjectHideFlags: 0
@@ -28274,6 +28845,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1126025993
 GameObject:
   m_ObjectHideFlags: 0
@@ -28306,7 +28878,7 @@ Transform:
   m_Children:
   - {fileID: 193882828}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 275
+  m_RootOrder: 273
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1126025996
 BoxCollider2D:
@@ -28361,6 +28933,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1133105375
 GameObject:
   m_ObjectHideFlags: 0
@@ -28616,6 +29189,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1144926791
 GameObject:
   m_ObjectHideFlags: 0
@@ -28702,6 +29276,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1148922265
 GameObject:
   m_ObjectHideFlags: 0
@@ -28789,6 +29364,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1150799522
 GameObject:
   m_ObjectHideFlags: 0
@@ -28821,7 +29397,7 @@ Transform:
   m_Children:
   - {fileID: 685475070}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 246
+  m_RootOrder: 245
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1150799525
 BoxCollider2D:
@@ -28876,6 +29452,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1156002903
 GameObject:
   m_ObjectHideFlags: 0
@@ -29131,6 +29708,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1165666096
 GameObject:
   m_ObjectHideFlags: 0
@@ -29218,6 +29796,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1168423822
 GameObject:
   m_ObjectHideFlags: 0
@@ -29305,6 +29884,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1169470022
 GameObject:
   m_ObjectHideFlags: 0
@@ -29366,6 +29946,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!61 &1169470025
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29479,6 +30060,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1175512492
 GameObject:
   m_ObjectHideFlags: 0
@@ -29566,6 +30148,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1177710887
 GameObject:
   m_ObjectHideFlags: 0
@@ -29653,6 +30236,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1181056108
 GameObject:
   m_ObjectHideFlags: 0
@@ -29740,6 +30324,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1186709579
 GameObject:
   m_ObjectHideFlags: 0
@@ -30079,6 +30664,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1194116982
 GameObject:
   m_ObjectHideFlags: 0
@@ -30165,6 +30751,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1197406710
 GameObject:
   m_ObjectHideFlags: 0
@@ -30420,6 +31007,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1204041991
 GameObject:
   m_ObjectHideFlags: 0
@@ -30507,6 +31095,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1206643211
 GameObject:
   m_ObjectHideFlags: 0
@@ -30594,6 +31183,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1207211616
 GameObject:
   m_ObjectHideFlags: 0
@@ -30680,6 +31270,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1211026890
 GameObject:
   m_ObjectHideFlags: 0
@@ -30851,6 +31442,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1216223883
 GameObject:
   m_ObjectHideFlags: 0
@@ -30938,6 +31530,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1219014413
 GameObject:
   m_ObjectHideFlags: 0
@@ -31193,6 +31786,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1232555725
 GameObject:
   m_ObjectHideFlags: 0
@@ -31280,6 +31874,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1239425430
 GameObject:
   m_ObjectHideFlags: 0
@@ -31367,6 +31962,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1241992422
 GameObject:
   m_ObjectHideFlags: 0
@@ -31538,6 +32134,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1244918552
 GameObject:
   m_ObjectHideFlags: 0
@@ -31625,6 +32222,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1247005272
 GameObject:
   m_ObjectHideFlags: 0
@@ -31712,6 +32310,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1247910919
 GameObject:
   m_ObjectHideFlags: 0
@@ -31799,6 +32398,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1251466757
 GameObject:
   m_ObjectHideFlags: 0
@@ -31885,6 +32485,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1253329461
 GameObject:
   m_ObjectHideFlags: 0
@@ -32056,6 +32657,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1256507729
 GameObject:
   m_ObjectHideFlags: 0
@@ -32142,6 +32744,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1264162075
 GameObject:
   m_ObjectHideFlags: 0
@@ -32229,6 +32832,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1273341828
 GameObject:
   m_ObjectHideFlags: 0
@@ -32400,6 +33004,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1279414144
 GameObject:
   m_ObjectHideFlags: 0
@@ -32461,6 +33066,7 @@ MonoBehaviour:
   isGhostStartingNode: 1
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!61 &1279414147
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32574,6 +33180,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1294697645
 GameObject:
   m_ObjectHideFlags: 0
@@ -32661,6 +33268,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1296406554
 GameObject:
   m_ObjectHideFlags: 0
@@ -32831,6 +33439,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1301745547
 GameObject:
   m_ObjectHideFlags: 0
@@ -32918,6 +33527,91 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
+--- !u!1 &1302402571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302402572}
+  - component: {fileID: 1302402573}
+  m_Layer: 0
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302402572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302402571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 730935113}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1302402573
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302402571}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: caa934f51b56cee4c8c4acd0f052a8bd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 0.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1312344944
 GameObject:
   m_ObjectHideFlags: 0
@@ -33005,6 +33699,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1314829098
 GameObject:
   m_ObjectHideFlags: 0
@@ -33259,6 +33954,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1321558669
 GameObject:
   m_ObjectHideFlags: 0
@@ -33346,6 +34042,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1321744095
 GameObject:
   m_ObjectHideFlags: 0
@@ -33685,6 +34382,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1336484886
 GameObject:
   m_ObjectHideFlags: 0
@@ -33772,6 +34470,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1336863415
 GameObject:
   m_ObjectHideFlags: 0
@@ -33943,6 +34642,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1343126916
 GameObject:
   m_ObjectHideFlags: 0
@@ -34030,6 +34730,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1344120681
 GameObject:
   m_ObjectHideFlags: 0
@@ -34537,6 +35238,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1359298623
 GameObject:
   m_ObjectHideFlags: 0
@@ -34624,6 +35326,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1363882171
 GameObject:
   m_ObjectHideFlags: 0
@@ -34879,6 +35582,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1371856596
 GameObject:
   m_ObjectHideFlags: 0
@@ -34966,6 +35670,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1373471334
 GameObject:
   m_ObjectHideFlags: 0
@@ -35053,6 +35758,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1373948028
 GameObject:
   m_ObjectHideFlags: 0
@@ -35085,7 +35791,7 @@ Transform:
   m_Children:
   - {fileID: 1874388436}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 286
+  m_RootOrder: 283
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1373948031
 BoxCollider2D:
@@ -35140,6 +35846,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1375942549
 GameObject:
   m_ObjectHideFlags: 0
@@ -35227,6 +35934,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1376967565
 GameObject:
   m_ObjectHideFlags: 0
@@ -35398,6 +36106,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1385680991
 GameObject:
   m_ObjectHideFlags: 0
@@ -35737,6 +36446,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1387923639
 GameObject:
   m_ObjectHideFlags: 0
@@ -35824,6 +36534,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1391681444
 GameObject:
   m_ObjectHideFlags: 0
@@ -35995,6 +36706,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1400234402
 GameObject:
   m_ObjectHideFlags: 0
@@ -36081,6 +36793,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!1 &1401798814
 GameObject:
   m_ObjectHideFlags: 0
@@ -36252,6 +36965,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1406314958
 GameObject:
   m_ObjectHideFlags: 0
@@ -36368,7 +37082,7 @@ Transform:
   m_Children:
   - {fileID: 1093582889}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 253
+  m_RootOrder: 251
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1408162234
 BoxCollider2D:
@@ -36423,6 +37137,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1409078650
 GameObject:
   m_ObjectHideFlags: 0
@@ -36510,6 +37225,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1411606998
 GameObject:
   m_ObjectHideFlags: 0
@@ -36884,6 +37600,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1416994271
 GameObject:
   m_ObjectHideFlags: 0
@@ -36971,6 +37688,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1429734189
 GameObject:
   m_ObjectHideFlags: 0
@@ -37058,6 +37776,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1438758787
 GameObject:
   m_ObjectHideFlags: 0
@@ -37090,7 +37809,7 @@ Transform:
   m_Children:
   - {fileID: 308875011}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 274
+  m_RootOrder: 272
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1438758790
 BoxCollider2D:
@@ -37145,6 +37864,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1442347282
 GameObject:
   m_ObjectHideFlags: 0
@@ -37400,6 +38120,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1451906646
 GameObject:
   m_ObjectHideFlags: 0
@@ -37487,6 +38208,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1455890210
 GameObject:
   m_ObjectHideFlags: 0
@@ -37742,6 +38464,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1465383841
 GameObject:
   m_ObjectHideFlags: 0
@@ -37913,6 +38636,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1466766275
 GameObject:
   m_ObjectHideFlags: 0
@@ -37925,7 +38649,7 @@ GameObject:
   - component: {fileID: 1466766278}
   - component: {fileID: 1466766279}
   m_Layer: 0
-  m_Name: Node(Clone)
+  m_Name: 4
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37944,8 +38668,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 126946827}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 283
+  m_Father: {fileID: 1893653956}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1466766278
 BoxCollider2D:
@@ -38000,6 +38724,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1467344218
 GameObject:
   m_ObjectHideFlags: 0
@@ -38087,6 +38812,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1468301501
 GameObject:
   m_ObjectHideFlags: 0
@@ -38342,6 +39068,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1482563962
 GameObject:
   m_ObjectHideFlags: 0
@@ -38513,6 +39240,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1487412702
 GameObject:
   m_ObjectHideFlags: 0
@@ -38600,6 +39328,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1490994455
 GameObject:
   m_ObjectHideFlags: 0
@@ -38687,6 +39416,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1492466610
 GameObject:
   m_ObjectHideFlags: 0
@@ -38774,6 +39504,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1497120467
 GameObject:
   m_ObjectHideFlags: 0
@@ -38861,6 +39592,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1498608827
 GameObject:
   m_ObjectHideFlags: 0
@@ -39032,6 +39764,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1503916944
 GameObject:
   m_ObjectHideFlags: 0
@@ -39287,6 +40020,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1511704825
 GameObject:
   m_ObjectHideFlags: 0
@@ -39710,6 +40444,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1520402385
 GameObject:
   m_ObjectHideFlags: 0
@@ -39742,7 +40477,7 @@ Transform:
   m_Children:
   - {fileID: 1188033055}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 250
+  m_RootOrder: 248
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1520402388
 BoxCollider2D:
@@ -39797,6 +40532,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1528468672
 GameObject:
   m_ObjectHideFlags: 0
@@ -40052,6 +40788,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1543360595
 GameObject:
   m_ObjectHideFlags: 0
@@ -40223,6 +40960,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1545595441
 GameObject:
   m_ObjectHideFlags: 0
@@ -40310,6 +41048,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1552383464
 GameObject:
   m_ObjectHideFlags: 0
@@ -40565,6 +41304,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1564648910
 GameObject:
   m_ObjectHideFlags: 0
@@ -40652,6 +41392,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1566324841
 GameObject:
   m_ObjectHideFlags: 0
@@ -40748,6 +41489,7 @@ GameObject:
   - component: {fileID: 1568530267}
   - component: {fileID: 1568530266}
   - component: {fileID: 1568530265}
+  - component: {fileID: 1568530269}
   m_Layer: 0
   m_Name: Red
   m_TagString: Enemy
@@ -40821,7 +41563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   currentNode: {fileID: 0}
-  speed: 1
+  speed: 3
   direction: 
   lastMovingDirection: 
   canWarp: 1
@@ -40850,6 +41592,13 @@ MonoBehaviour:
   readyToLeaveHome: 1
   gameManager: {fileID: 0}
   testRespawn: 0
+  isFrightened: 0
+  scatterNodes:
+  - {fileID: 726176943}
+  - {fileID: 94185403}
+  - {fileID: 1775121219}
+  - {fileID: 1466766275}
+  scatterNodeIndex: 0
 --- !u!4 &1568530268
 Transform:
   m_ObjectHideFlags: 0
@@ -40864,8 +41613,34 @@ Transform:
   m_Children:
   - {fileID: 1461578191}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1568530269
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568530264}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0072904825, y: -0.014580965}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3563755, y: 1.4876032}
+  m_EdgeRadius: 0
 --- !u!1 &1573124862
 GameObject:
   m_ObjectHideFlags: 0
@@ -40953,6 +41728,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1576123768
 GameObject:
   m_ObjectHideFlags: 0
@@ -41174,7 +41950,7 @@ Transform:
   m_Children:
   - {fileID: 755712698}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 255
+  m_RootOrder: 253
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1577687916
 BoxCollider2D:
@@ -41229,6 +42005,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1579633930
 GameObject:
   m_ObjectHideFlags: 0
@@ -41354,6 +42131,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1587400497
 GameObject:
   m_ObjectHideFlags: 0
@@ -41441,6 +42219,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1595338552
 GameObject:
   m_ObjectHideFlags: 0
@@ -41696,6 +42475,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1607764218
 GameObject:
   m_ObjectHideFlags: 0
@@ -41783,6 +42563,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1610856128
 GameObject:
   m_ObjectHideFlags: 0
@@ -41954,6 +42735,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1618583704
 GameObject:
   m_ObjectHideFlags: 0
@@ -42226,11 +43008,9 @@ Transform:
   - {fileID: 37797078}
   - {fileID: 815068570}
   - {fileID: 193283020}
-  - {fileID: 726176944}
   - {fileID: 634926804}
   - {fileID: 1150799523}
   - {fileID: 1634170963}
-  - {fileID: 94185404}
   - {fileID: 498854830}
   - {fileID: 1520402386}
   - {fileID: 692498784}
@@ -42265,11 +43045,9 @@ Transform:
   - {fileID: 1668907515}
   - {fileID: 340597088}
   - {fileID: 611274543}
-  - {fileID: 1466766276}
   - {fileID: 743051512}
   - {fileID: 1931763979}
   - {fileID: 1373948029}
-  - {fileID: 1775121220}
   m_Father: {fileID: 242619035}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42305,7 +43083,7 @@ Transform:
   m_Children:
   - {fileID: 292837319}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 264
+  m_RootOrder: 262
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1620981950
 BoxCollider2D:
@@ -42360,6 +43138,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1626017069
 GameObject:
   m_ObjectHideFlags: 0
@@ -42447,6 +43226,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1627126443
 GameObject:
   m_ObjectHideFlags: 0
@@ -42702,6 +43482,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1629049736
 GameObject:
   m_ObjectHideFlags: 0
@@ -42818,7 +43599,7 @@ Transform:
   m_Children:
   - {fileID: 591595797}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 247
+  m_RootOrder: 246
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1634170965
 BoxCollider2D:
@@ -42873,6 +43654,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1636657855
 GameObject:
   m_ObjectHideFlags: 0
@@ -42960,6 +43742,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1638884424
 GameObject:
   m_ObjectHideFlags: 0
@@ -42992,7 +43775,7 @@ Transform:
   m_Children:
   - {fileID: 1344314216}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 269
+  m_RootOrder: 267
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1638884427
 BoxCollider2D:
@@ -43047,6 +43830,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1641848703
 GameObject:
   m_ObjectHideFlags: 0
@@ -43133,6 +43917,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1641866424
 GameObject:
   m_ObjectHideFlags: 0
@@ -43388,6 +44173,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1656903493
 GameObject:
   m_ObjectHideFlags: 0
@@ -43811,6 +44597,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1667198808
 GameObject:
   m_ObjectHideFlags: 0
@@ -43898,6 +44685,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1668907514
 GameObject:
   m_ObjectHideFlags: 0
@@ -43930,7 +44718,7 @@ Transform:
   m_Children:
   - {fileID: 1035054942}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 280
+  m_RootOrder: 278
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1668907517
 BoxCollider2D:
@@ -43985,6 +44773,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1672715956
 GameObject:
   m_ObjectHideFlags: 0
@@ -44045,6 +44834,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!61 &1672715959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44158,6 +44948,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1685409096
 GameObject:
   m_ObjectHideFlags: 0
@@ -44358,7 +45149,7 @@ Transform:
   m_Children:
   - {fileID: 1345591716}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 277
+  m_RootOrder: 275
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1703259099
 BoxCollider2D:
@@ -44413,6 +45204,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1722316998
 GameObject:
   m_ObjectHideFlags: 0
@@ -44500,6 +45292,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1733035979
 GameObject:
   m_ObjectHideFlags: 0
@@ -44587,6 +45380,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1736770502
 GameObject:
   m_ObjectHideFlags: 0
@@ -44674,6 +45468,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1742136297
 GameObject:
   m_ObjectHideFlags: 0
@@ -44761,6 +45556,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1746385769
 GameObject:
   m_ObjectHideFlags: 0
@@ -44848,6 +45644,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1749995342
 GameObject:
   m_ObjectHideFlags: 0
@@ -44964,7 +45761,7 @@ Transform:
   m_Children:
   - {fileID: 27987060}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 261
+  m_RootOrder: 259
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1765949379
 BoxCollider2D:
@@ -45019,6 +45816,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1770955035
 GameObject:
   m_ObjectHideFlags: 0
@@ -45115,7 +45913,7 @@ GameObject:
   - component: {fileID: 1775121222}
   - component: {fileID: 1775121223}
   m_Layer: 0
-  m_Name: Node(Clone)
+  m_Name: 3
   m_TagString: Node
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45134,8 +45932,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1133455145}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 287
+  m_Father: {fileID: 1893653956}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1775121222
 BoxCollider2D:
@@ -45190,6 +45988,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1776551114
 GameObject:
   m_ObjectHideFlags: 0
@@ -45306,7 +46105,7 @@ Transform:
   m_Children:
   - {fileID: 631200598}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 271
+  m_RootOrder: 269
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1778238777
 BoxCollider2D:
@@ -45361,6 +46160,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1781474065
 GameObject:
   m_ObjectHideFlags: 0
@@ -45532,6 +46332,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1783098506
 GameObject:
   m_ObjectHideFlags: 0
@@ -45703,6 +46504,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1789799024
 GameObject:
   m_ObjectHideFlags: 0
@@ -45797,7 +46599,7 @@ RectTransform:
   m_Children:
   - {fileID: 2143702850}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -46227,6 +47029,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1821409828
 GameObject:
   m_ObjectHideFlags: 0
@@ -46259,7 +47062,7 @@ Transform:
   m_Children:
   - {fileID: 2103064277}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 263
+  m_RootOrder: 261
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1821409831
 BoxCollider2D:
@@ -46314,6 +47117,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1823219127
 GameObject:
   m_ObjectHideFlags: 0
@@ -46653,6 +47457,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1840718500
 GameObject:
   m_ObjectHideFlags: 0
@@ -46740,6 +47545,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1854196404
 GameObject:
   m_ObjectHideFlags: 0
@@ -46827,6 +47633,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1857235792
 GameObject:
   m_ObjectHideFlags: 0
@@ -46909,7 +47716,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858218868
 GameObject:
@@ -47082,6 +47889,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1862982501
 GameObject:
   m_ObjectHideFlags: 0
@@ -47589,6 +48397,206 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
+--- !u!1 &1891567151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891567156}
+  - component: {fileID: 1891567155}
+  - component: {fileID: 1891567154}
+  - component: {fileID: 1891567153}
+  - component: {fileID: 1891567152}
+  m_Layer: 0
+  m_Name: Orange
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1891567152
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891567151}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0072904825, y: -0.014580965}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.1, y: 2.1}
+    newSize: {x: 2.1, y: 2.1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3563755, y: 1.4876032}
+  m_EdgeRadius: 0
+--- !u!212 &1891567153
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891567151}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: d5d24cc7f7f842b4db9345d3e36c32e0, type: 3}
+  m_Color: {r: 0.98039216, g: 0.54509807, b: 0.050980393, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.1, y: 2.1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1891567154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891567151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dc9c0a0454d5345a95bc2fb916ae55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  currentNode: {fileID: 0}
+  speed: 3
+  direction: 
+  lastMovingDirection: 
+  canWarp: 1
+  isGhost: 1
+--- !u!114 &1891567155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891567151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cefd930382860c146a6db0c3bd0d608d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ghostNodeState: 0
+  respawnState: 0
+  ghostType: 3
+  ghostNodeLeft: {fileID: 504626535}
+  ghostNodeRight: {fileID: 1169470022}
+  ghostNodeCenter: {fileID: 17646538}
+  ghostNodeStart: {fileID: 1279414144}
+  movementController: {fileID: 0}
+  startingNode: {fileID: 0}
+  readyToLeaveHome: 0
+  gameManager: {fileID: 0}
+  testRespawn: 0
+  isFrightened: 0
+  scatterNodes:
+  - {fileID: 726176943}
+  - {fileID: 94185403}
+  - {fileID: 1775121219}
+  - {fileID: 1466766275}
+  scatterNodeIndex: 0
+--- !u!4 &1891567156
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891567151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.55, y: 0.26, z: -0.038145456}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1993300228}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1893653955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893653956}
+  m_Layer: 0
+  m_Name: ScatterNodesRed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1893653956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893653955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 726176944}
+  - {fileID: 94185404}
+  - {fileID: 1775121220}
+  - {fileID: 1466766276}
+  m_Father: {fileID: 242619035}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895936770
 GameObject:
   m_ObjectHideFlags: 0
@@ -47676,6 +48684,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1898167289
 GameObject:
   m_ObjectHideFlags: 0
@@ -47847,6 +48856,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1902549133
 GameObject:
   m_ObjectHideFlags: 0
@@ -48018,6 +49028,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1919740113
 GameObject:
   m_ObjectHideFlags: 0
@@ -48105,6 +49116,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1921754498
 GameObject:
   m_ObjectHideFlags: 0
@@ -48276,6 +49288,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1922617811
 GameObject:
   m_ObjectHideFlags: 0
@@ -48615,6 +49628,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1929709724
 GameObject:
   m_ObjectHideFlags: 0
@@ -48702,6 +49716,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1931763978
 GameObject:
   m_ObjectHideFlags: 0
@@ -48734,7 +49749,7 @@ Transform:
   m_Children:
   - {fileID: 1801978640}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 285
+  m_RootOrder: 282
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1931763981
 BoxCollider2D:
@@ -48789,6 +49804,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1931877464
 GameObject:
   m_ObjectHideFlags: 0
@@ -48960,6 +49976,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1936332009
 GameObject:
   m_ObjectHideFlags: 0
@@ -49047,6 +50064,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1936828437
 GameObject:
   m_ObjectHideFlags: 0
@@ -49218,6 +50236,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1942143484
 GameObject:
   m_ObjectHideFlags: 0
@@ -49473,6 +50492,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1951134990
 GameObject:
   m_ObjectHideFlags: 0
@@ -49560,6 +50580,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1951854510
 GameObject:
   m_ObjectHideFlags: 0
@@ -49704,6 +50725,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 1
 --- !u!61 &1952843277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50153,6 +51175,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &1984562762
 GameObject:
   m_ObjectHideFlags: 0
@@ -50324,6 +51347,91 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
+--- !u!1 &1993300227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1993300228}
+  - component: {fileID: 1993300229}
+  m_Layer: 0
+  m_Name: Eyes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1993300228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993300227}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1891567156}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1993300229
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993300227}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: caa934f51b56cee4c8c4acd0f052a8bd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.5, y: 0.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1997515389
 GameObject:
   m_ObjectHideFlags: 0
@@ -50663,6 +51771,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2027325477
 GameObject:
   m_ObjectHideFlags: 0
@@ -50750,6 +51859,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2029243906
 GameObject:
   m_ObjectHideFlags: 0
@@ -50837,6 +51947,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2038778187
 GameObject:
   m_ObjectHideFlags: 0
@@ -51008,6 +52119,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2054630135
 GameObject:
   m_ObjectHideFlags: 0
@@ -51095,6 +52207,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2057684826
 GameObject:
   m_ObjectHideFlags: 0
@@ -51266,6 +52379,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2061101279
 GameObject:
   m_ObjectHideFlags: 0
@@ -51353,6 +52467,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2064092425
 GameObject:
   m_ObjectHideFlags: 0
@@ -51385,7 +52500,7 @@ Transform:
   m_Children:
   - {fileID: 447312274}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 276
+  m_RootOrder: 274
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2064092428
 BoxCollider2D:
@@ -51440,6 +52555,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2070228583
 GameObject:
   m_ObjectHideFlags: 0
@@ -51590,7 +52706,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2074911675
 GameObject:
@@ -51624,7 +52740,7 @@ Transform:
   m_Children:
   - {fileID: 1511704826}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 268
+  m_RootOrder: 266
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2074911678
 BoxCollider2D:
@@ -51679,6 +52795,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2098477431
 GameObject:
   m_ObjectHideFlags: 0
@@ -52018,6 +53135,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2107598250
 GameObject:
   m_ObjectHideFlags: 0
@@ -52105,6 +53223,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2114648891
 GameObject:
   m_ObjectHideFlags: 0
@@ -52192,6 +53311,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2116647916
 GameObject:
   m_ObjectHideFlags: 0
@@ -52363,6 +53483,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2133288077
 GameObject:
   m_ObjectHideFlags: 0
@@ -52534,6 +53655,7 @@ MonoBehaviour:
   isGhostStartingNode: 0
   pelletSprite: {fileID: 0}
   gameManager: {fileID: 0}
+  isSideNode: 0
 --- !u!1 &2140131398
 GameObject:
   m_ObjectHideFlags: 0

@@ -105,6 +105,11 @@ public class MovementController : MonoBehaviour
         }
     }
 
+    public void SetSpeed(float newSpeed)
+    {
+        speed = newSpeed;
+    }
+
     public void setDirection(string newDirection)
     {
         direction = newDirection;
