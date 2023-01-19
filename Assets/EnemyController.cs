@@ -99,11 +99,11 @@ public class EnemyController : MonoBehaviour
 
         if (movementController.currentNode.GetComponent<NodeController>().isSideNode)
         {
-            movementController.SetSpeed(2);
+            movementController.SetSpeed(1);
         }
         else
         {
-            movementController.SetSpeed(3);
+            movementController.SetSpeed(1);
         }
     }
 
@@ -114,18 +114,7 @@ public class EnemyController : MonoBehaviour
             // Scatter mode
             if (gameManager.currentGhostMode == GameManager.GhostMode.scatter)
             {
-                // If we reached the scatter node, add one to our scatter node index
-                if (transform.position.x == scatterNodes[scatterNodeIndex].transform.position.x && transform.position.y == scatterNodes[scatterNodeIndex].transform.position.y)
-                {
-                    scatterNodeIndex++;
-
-                    if (scatterNodeIndex == scatterNodes.Length -1)
-                    {
-                        scatterNodeIndex = 0;
-                    }
-                }
-                string direction = GetClosestDirection(scatterNodes[scatterNodeIndex].transform.position);
-                movementController.setDirection(direction);
+                DetermineGhostScatterModeDirection();
             }
             // Frightened mode
             else if (isFrightened)
@@ -231,6 +220,22 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    void DetermineGhostScatterModeDirection()
+    {
+        // If we reached the scatter node, add one to our scatter node index
+                if (transform.position.x == scatterNodes[scatterNodeIndex].transform.position.x && transform.position.y == scatterNodes[scatterNodeIndex].transform.position.y)
+                {
+                    scatterNodeIndex++;
+
+                    if (scatterNodeIndex == scatterNodes.Length -1)
+                    {
+                        scatterNodeIndex = 0;
+                    }
+                }
+                string direction = GetClosestDirection(scatterNodes[scatterNodeIndex].transform.position);
+                movementController.setDirection(direction);
+    }
+
     // Determine the direction of the red ghost
     void DetermineRedGhostDirection()
     {
@@ -302,7 +307,24 @@ public class EnemyController : MonoBehaviour
     // Determine the direction of the orange ghost
     void DetermineOrangeGhostDirection()
     {
+        float distance = Vector2.Distance(gameManager.pacman.transform.position, transform.position);
+        float distanceBetweenNodes = 0.3f;
+        if (distance < 0)
+        {
+            distance *= -1;
+        }
 
+        // If we are within 8 nodes of pacman, chase him using red's logic
+        if (distance <= distanceBetweenNodes * 8)
+        {
+            DetermineRedGhostDirection();
+        }
+        // Otherwise, use scatter mode logic
+        else
+        {
+            // Scatter mode
+            DetermineGhostScatterModeDirection();
+        }
     }
 
     // Determines the ghost's closest direction to Pacman
