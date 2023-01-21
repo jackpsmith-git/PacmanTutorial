@@ -52,6 +52,8 @@ public class GameManager : MonoBehaviour
     public int lives;
     public int currentLevel;
 
+    public Image blackBackground;
+
     public enum GhostMode
     {
         chase, scatter
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
     {
         newGame = true;
         clearedLevel = false;
+        blackBackground.enabled = false;
 
         redGhostController = redGhost.GetComponent<EnemyController>();
         pinkGhostController = pinkGhost.GetComponent<EnemyController>();
@@ -83,8 +86,10 @@ public class GameManager : MonoBehaviour
         if (clearedLevel)
         {
             // Activate background
+            blackBackground.enabled = true;
             yield return new WaitForSeconds(0.1f);
         }
+        blackBackground.enabled = false;
         
         pelletsCollectedOnThisLife = 0;
         currentGhostMode = GhostMode.scatter;
@@ -95,6 +100,7 @@ public class GameManager : MonoBehaviour
 
         if (clearedLevel || newGame)
         {
+            pelletsLeft = totalPellets;
             waitTimer = 4f;
             // Pellets will respawn when Pacman clears a level or starts a new game
             for (int i = 0; i < nodeControllers.Count; i++)
@@ -113,16 +119,15 @@ public class GameManager : MonoBehaviour
         }
         yield return new WaitForSeconds(waitTimer);
         pacman.GetComponent<PlayerController>().Setup();
-
+        
         redGhostController.Setup();
         pinkGhostController.Setup();
         blueGhostController.Setup();
         orangeGhostController.Setup();
-
-        // newGame = false;
-        // clearedLevel = false;
         
-
+        newGame = false;
+        clearedLevel = false;
+        
         StartGame();
     }
 
@@ -130,6 +135,13 @@ public class GameManager : MonoBehaviour
     {
         gameIsRunning = true;
         siren.Play();
+    }
+
+    void StopGame()
+    {
+        gameIsRunning = false;
+        siren.Stop();
+        pacman.GetComponent<PlayerController>().Stop();
     }
 
     // Update is called once per frame
@@ -152,7 +164,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score.ToString();
     }
 
-    public void CollectedPellet(NodeController nodeController)
+    public IEnumerator CollectedPellet(NodeController nodeController)
     {
         // Alternate between munch audio sources every time a pellet is collected
         if (currentMunch == 0)
@@ -197,6 +209,14 @@ public class GameManager : MonoBehaviour
         AddToScore(10);
 
         // Check if there are any pellets left
+        if (pelletsLeft == 0)
+        {
+            currentLevel++;
+            clearedLevel = true;
+            StopGame();
+            yield return new WaitForSeconds(1);
+            StartCoroutine(Setup());
+        }
 
         // Check how many pellets were eaten
 

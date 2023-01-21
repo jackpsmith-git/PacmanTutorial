@@ -90,16 +90,22 @@ public class EnemyController : MonoBehaviour
     public void Setup()
     {
         ghostNodeState = startGhostNodeState;
+        readyToLeaveHome = false;
 
         // Reset our ghosts back to their home position
         movementController.currentNode = startingNode;
         transform.position = startingNode.transform.position;
+
+        movementController.direction = "";
+        movementController.lastMovingDirection = "";
 
         // Set their scatter node index back to zero
         scatterNodeIndex = 0;
 
         // Set isFrightened to false
         isFrightened = false;
+
+        leftHomeBefore = false;
 
         // Set readyToLeave home to false if blue or pink
         if (ghostType == GhostType.red)
@@ -131,6 +137,14 @@ public class EnemyController : MonoBehaviour
         else
         {
             movementController.SetSpeed(1);
+        }
+        if (gameManager.gameIsRunning)
+        {
+            if (ghostType == GhostType.pink || ghostType == GhostType.red)
+            {
+                readyToLeaveHome = true;
+            }
+            
         }
     }
 
