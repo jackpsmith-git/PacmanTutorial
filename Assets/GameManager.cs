@@ -24,12 +24,14 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
 
     public TMP_Text gameOverText;
-    public TMP_Text livesText;
 
     public GameObject ghostNodeLeft;
     public GameObject ghostNodeRight;
     public GameObject ghostNodeCenter;
     public GameObject ghostNodeStart;
+    public GameObject lifeOne;
+    public GameObject lifeTwo;
+    public GameObject lifeThree;
 
     public GameObject redGhost;
     public GameObject pinkGhost;
@@ -92,6 +94,9 @@ public class GameManager : MonoBehaviour
         pinkGhostController = pinkGhost.GetComponent<EnemyController>();
         blueGhostController = blueGhost.GetComponent<EnemyController>();
         orangeGhostController = orangeGhost.GetComponent<EnemyController>();
+        lifeOne = GameObject.Find("LifeOne");
+        lifeTwo = GameObject.Find("LifeTwo");
+        lifeThree = GameObject.Find("LifeThree");
 
         ghostNodeStart.GetComponent<NodeController>().isGhostStartingNode = true;
 
@@ -159,7 +164,6 @@ public class GameManager : MonoBehaviour
     void SetLives(int newLives)
     {
         lives = newLives;
-        livesText.text = "Lives: " + lives;
     }
 
     void StartGame()
@@ -239,6 +243,31 @@ public class GameManager : MonoBehaviour
                 siren.Play();
                 powerPelletMultiplyer = 1;
             }
+        }
+
+        if (lives == 0)
+        {
+            lifeOne.SetActive(false);
+            lifeTwo.SetActive(false);
+            lifeThree.SetActive(false);
+        }
+        else if (lives == 1)
+        {
+            lifeOne.SetActive(true);
+            lifeTwo.SetActive(false);
+            lifeThree.SetActive(false);
+        }
+        else if (lives == 2)
+        {
+            lifeOne.SetActive(true);
+            lifeTwo.SetActive(true);
+            lifeThree.SetActive(false); 
+        }
+        else if (lives == 3)
+        {
+            lifeOne.SetActive(true);
+            lifeTwo.SetActive(true);
+            lifeThree.SetActive(true); 
         }
     }
 
