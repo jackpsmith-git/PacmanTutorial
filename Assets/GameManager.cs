@@ -86,6 +86,15 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        Arise();
+    }
+
+    public void Arise()
+    {
+        siren.Stop();
+        powerPelletAudio.Stop();
+        respawningAudio.Stop();
+        
         newGame = true;
         clearedLevel = false;
         blackBackground.enabled = false;
@@ -393,7 +402,9 @@ public class GameManager : MonoBehaviour
 
             yield return new WaitForSeconds(3);
         }
-
-        StartCoroutine(Setup());
+        else
+        {
+            StartCoroutine(Setup());
+        }
     }
 }
