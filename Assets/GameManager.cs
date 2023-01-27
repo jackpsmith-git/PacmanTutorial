@@ -396,7 +396,7 @@ public class GameManager : MonoBehaviour
         SetLives(lives - 1);
         if (lives <= 0)
         {
-            newGame = true;
+            // newGame = true;
             // Display gameover text
             gameOverText.enabled = true;
 
