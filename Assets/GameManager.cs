@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text scoreText;
 
     public TMP_Text gameOverText;
+    public TMP_Text levelText;
 
     public GameObject ghostNodeLeft;
     public GameObject ghostNodeRight;
@@ -106,6 +107,7 @@ public class GameManager : MonoBehaviour
         lifeOne = GameObject.Find("LifeOne");
         lifeTwo = GameObject.Find("LifeTwo");
         lifeThree = GameObject.Find("LifeThree");
+        currentLevel = 1;
 
         ghostNodeStart.GetComponent<NodeController>().isGhostStartingNode = true;
 
@@ -155,6 +157,7 @@ public class GameManager : MonoBehaviour
             scoreText.text = "Score: " + score.ToString();
             SetLives(3);
             currentLevel = 1;
+            levelText.text = "LVL: " + currentLevel.ToString();
         }
         yield return new WaitForSeconds(waitTimer);
         pacman.GetComponent<PlayerController>().Setup();
@@ -278,6 +281,9 @@ public class GameManager : MonoBehaviour
             lifeTwo.SetActive(true);
             lifeThree.SetActive(true); 
         }
+
+        levelText.SetText("LVL: " + currentLevel);
+
     }
 
     public void GotPelletFromNodeController(NodeController nodeController)
@@ -342,6 +348,11 @@ public class GameManager : MonoBehaviour
         if (pelletsLeft == 0)
         {
             currentLevel++;
+            redGhost.GetComponent<MovementController>().SetSpeed(0.0078125f + redGhost.GetComponent<MovementController>().speed);
+            pinkGhost.GetComponent<MovementController>().SetSpeed(0.0078125f + pinkGhost.GetComponent<MovementController>().speed);
+            blueGhost.GetComponent<MovementController>().SetSpeed(0.0078125f + blueGhost.GetComponent<MovementController>().speed);
+            orangeGhost.GetComponent<MovementController>().SetSpeed(0.0078125f + orangeGhost.GetComponent<MovementController>().speed);
+   
             clearedLevel = true;
             StopGame();
             yield return new WaitForSeconds(1);

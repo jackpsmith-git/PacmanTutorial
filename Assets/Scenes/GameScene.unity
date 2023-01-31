@@ -155,7 +155,7 @@ Transform:
   m_Children:
   - {fileID: 402247015}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 240
+  m_RootOrder: 212
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4126714
 BoxCollider2D:
@@ -245,7 +245,7 @@ Transform:
   m_Children:
   - {fileID: 177577633}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 188
+  m_RootOrder: 160
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &4703714
 BoxCollider2D:
@@ -419,7 +419,7 @@ Transform:
   m_Children:
   - {fileID: 769742787}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 248
+  m_RootOrder: 220
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &9012471
 BoxCollider2D:
@@ -862,7 +862,7 @@ Transform:
   m_Children:
   - {fileID: 1198925855}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 195
+  m_RootOrder: 167
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &28382550
 BoxCollider2D:
@@ -1036,7 +1036,7 @@ Transform:
   m_Children:
   - {fileID: 595212395}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 219
+  m_RootOrder: 191
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &37797080
 BoxCollider2D:
@@ -1178,6 +1178,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &38729745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 38729746}
+  m_Layer: 0
+  m_Name: FruitSpawnNodes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &38729746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38729745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1935647698}
+  - {fileID: 460771834}
+  - {fileID: 567723230}
+  - {fileID: 739496665}
+  - {fileID: 1722316999}
+  - {fileID: 847135758}
+  - {fileID: 144977852}
+  - {fileID: 1467344219}
+  - {fileID: 352214666}
+  - {fileID: 1229728883}
+  - {fileID: 2123945633}
+  - {fileID: 974362922}
+  - {fileID: 479568449}
+  - {fileID: 138206304}
+  - {fileID: 203916577}
+  - {fileID: 1373471335}
+  - {fileID: 998444769}
+  - {fileID: 2045071099}
+  - {fileID: 983427386}
+  - {fileID: 2027325478}
+  - {fileID: 990944982}
+  - {fileID: 249848696}
+  - {fileID: 2114648892}
+  - {fileID: 902685611}
+  - {fileID: 146319621}
+  - {fileID: 2107598251}
+  - {fileID: 1148922266}
+  - {fileID: 1858923641}
+  m_Father: {fileID: 242619035}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &40321948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1269,7 @@ Transform:
   m_Children:
   - {fileID: 1514314489}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 247
+  m_RootOrder: 219
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &40321951
 BoxCollider2D:
@@ -1300,7 +1359,7 @@ Transform:
   m_Children:
   - {fileID: 344201916}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 166
+  m_RootOrder: 147
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &54024532
 BoxCollider2D:
@@ -1558,7 +1617,7 @@ Transform:
   m_Children:
   - {fileID: 1014523261}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 251
+  m_RootOrder: 223
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &59529344
 BoxCollider2D:
@@ -1666,6 +1725,7 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 2143702851}
   gameOverText: {fileID: 1806116233}
+  levelText: {fileID: 772467154}
   ghostNodeLeft: {fileID: 504626535}
   ghostNodeRight: {fileID: 1169470022}
   ghostNodeCenter: {fileID: 17646538}
@@ -2519,7 +2579,7 @@ Transform:
   m_Children:
   - {fileID: 129834152}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 205
+  m_RootOrder: 177
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &73989613
 BoxCollider2D:
@@ -2777,7 +2837,7 @@ Transform:
   m_Children:
   - {fileID: 367272264}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 192
+  m_RootOrder: 164
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &84482943
 BoxCollider2D:
@@ -3461,7 +3521,7 @@ Transform:
   m_Children:
   - {fileID: 970438670}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 113
+  m_RootOrder: 104
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &110002135
 BoxCollider2D:
@@ -3971,7 +4031,7 @@ Transform:
   m_Children:
   - {fileID: 253967050}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 217
+  m_RootOrder: 189
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &134384111
 BoxCollider2D:
@@ -4144,8 +4204,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 902800947}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 184
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &138206306
 BoxCollider2D:
@@ -4203,6 +4263,82 @@ MonoBehaviour:
   isSideNode: 0
   isPowerPellet: 0
   powerPelletBlinkingTimer: 0
+--- !u!1 &143765381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143765382}
+  - component: {fileID: 143765384}
+  - component: {fileID: 143765383}
+  m_Layer: 5
+  m_Name: StrawberryImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &143765382
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143765381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 589.2, y: 222.9}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &143765383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143765381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -828525785, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0.97
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &143765384
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143765381}
+  m_CullTransparentMesh: 1
 --- !u!1 &144278383
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,8 +4454,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 708932593}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 151
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &144977854
 BoxCollider2D:
@@ -4409,7 +4545,7 @@ Transform:
   m_Children:
   - {fileID: 123876012}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 100
+  m_RootOrder: 93
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &145495948
 BoxCollider2D:
@@ -4498,8 +4634,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 361921999}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 94
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &146319623
 BoxCollider2D:
@@ -4673,7 +4809,7 @@ Transform:
   m_Children:
   - {fileID: 1512217727}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 161
+  m_RootOrder: 144
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &157522785
 BoxCollider2D:
@@ -5021,7 +5157,7 @@ Transform:
   m_Children:
   - {fileID: 136178223}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 102
+  m_RootOrder: 95
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &174109741
 BoxCollider2D:
@@ -5369,7 +5505,7 @@ Transform:
   m_Children:
   - {fileID: 1871683144}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 221
+  m_RootOrder: 193
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &193283022
 BoxCollider2D:
@@ -5739,8 +5875,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 606081643}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 185
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &203916579
 BoxCollider2D:
@@ -5998,7 +6134,7 @@ Transform:
   m_Children:
   - {fileID: 684336088}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 136
+  m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &218173507
 BoxCollider2D:
@@ -6268,7 +6404,7 @@ Transform:
   m_Children:
   - {fileID: 585115145}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 99
+  m_RootOrder: 92
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &231109405
 BoxCollider2D:
@@ -6706,7 +6842,7 @@ Transform:
   m_Children:
   - {fileID: 384720377}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 194
+  m_RootOrder: 166
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &240371157
 BoxCollider2D:
@@ -6801,6 +6937,7 @@ Transform:
   - {fileID: 378713841}
   - {fileID: 473160273}
   - {fileID: 843974348}
+  - {fileID: 38729746}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6919,8 +7056,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 629673921}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 107
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &249848698
 BoxCollider2D:
@@ -7442,7 +7579,7 @@ Transform:
   m_Children:
   - {fileID: 1028383648}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 106
+  m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &270468313
 BoxCollider2D:
@@ -7958,7 +8095,7 @@ Transform:
   m_Children:
   - {fileID: 75637537}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 159
+  m_RootOrder: 142
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &296677768
 BoxCollider2D:
@@ -8274,6 +8411,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &319002643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319002644}
+  - component: {fileID: 319002646}
+  - component: {fileID: 319002645}
+  m_Layer: 5
+  m_Name: OrangeImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &319002644
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319002643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 593.5, y: 133.7}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &319002645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319002643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1741653387, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0.96
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &319002646
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319002643}
+  m_CullTransparentMesh: 1
 --- !u!1 &320131011
 GameObject:
   m_ObjectHideFlags: 0
@@ -8480,7 +8693,7 @@ Transform:
   m_Children:
   - {fileID: 721544440}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 254
+  m_RootOrder: 226
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &340597090
 BoxCollider2D:
@@ -8743,8 +8956,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1156002904}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 172
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &352214668
 BoxCollider2D:
@@ -9636,7 +9849,7 @@ Transform:
   m_Children:
   - {fileID: 834301309}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 180
+  m_RootOrder: 159
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &390488246
 BoxCollider2D:
@@ -9810,7 +10023,7 @@ Transform:
   m_Children:
   - {fileID: 788908991}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 179
+  m_RootOrder: 158
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &395322667
 BoxCollider2D:
@@ -10152,7 +10365,7 @@ Transform:
   m_Children:
   - {fileID: 1689093338}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 191
+  m_RootOrder: 163
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &407413488
 BoxCollider2D:
@@ -10326,7 +10539,7 @@ Transform:
   m_Children:
   - {fileID: 533797233}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 152
+  m_RootOrder: 135
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &413644511
 BoxCollider2D:
@@ -10416,7 +10629,7 @@ Transform:
   m_Children:
   - {fileID: 1665963685}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 131
+  m_RootOrder: 118
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &414398029
 BoxCollider2D:
@@ -11016,7 +11229,7 @@ Transform:
   m_Children:
   - {fileID: 1506688396}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 204
+  m_RootOrder: 176
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &436870392
 BoxCollider2D:
@@ -11538,7 +11751,7 @@ Transform:
   m_Children:
   - {fileID: 1039788296}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 201
+  m_RootOrder: 173
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &449532440
 BoxCollider2D:
@@ -11910,8 +12123,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 422925610}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 108
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &460771836
 BoxCollider2D:
@@ -12208,8 +12421,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 749415537}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 183
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &479568451
 BoxCollider2D:
@@ -12267,6 +12480,82 @@ MonoBehaviour:
   isSideNode: 0
   isPowerPellet: 0
   powerPelletBlinkingTimer: 0
+--- !u!1 &481573574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 481573575}
+  - component: {fileID: 481573577}
+  - component: {fileID: 481573576}
+  m_Layer: 5
+  m_Name: MelonImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &481573575
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481573574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 592.7, y: -45.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &481573576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481573574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -810897469, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0.97
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &481573577
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481573574}
+  m_CullTransparentMesh: 1
 --- !u!1 &489945723
 GameObject:
   m_ObjectHideFlags: 0
@@ -12299,7 +12588,7 @@ Transform:
   m_Children:
   - {fileID: 947301275}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 147
+  m_RootOrder: 132
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &489945726
 BoxCollider2D:
@@ -12479,7 +12768,7 @@ Transform:
   m_Children:
   - {fileID: 1984562763}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 225
+  m_RootOrder: 197
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &498854832
 BoxCollider2D:
@@ -12748,7 +13037,7 @@ Transform:
   m_Children:
   - {fileID: 1749995343}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 235
+  m_RootOrder: 207
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &508540635
 BoxCollider2D:
@@ -13012,7 +13301,7 @@ Transform:
   m_Children:
   - {fileID: 1921754499}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 233
+  m_RootOrder: 205
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &510280790
 BoxCollider2D:
@@ -13270,7 +13559,7 @@ Transform:
   m_Children:
   - {fileID: 104148112}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 121
+  m_RootOrder: 110
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &518798426
 BoxCollider2D:
@@ -13624,7 +13913,7 @@ Transform:
   m_Children:
   - {fileID: 656803756}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 245
+  m_RootOrder: 217
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &526769011
 BoxCollider2D:
@@ -14050,7 +14339,7 @@ Transform:
   m_Children:
   - {fileID: 1387684637}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 110
+  m_RootOrder: 101
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &544495267
 BoxCollider2D:
@@ -14140,7 +14429,7 @@ Transform:
   m_Children:
   - {fileID: 1186709580}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 170
+  m_RootOrder: 151
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &551015430
 BoxCollider2D:
@@ -14230,7 +14519,7 @@ Transform:
   m_Children:
   - {fileID: 1503916945}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 162
+  m_RootOrder: 145
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &553947854
 BoxCollider2D:
@@ -14577,8 +14866,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 964024907}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 116
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &567723232
 BoxCollider2D:
@@ -14842,7 +15131,7 @@ Transform:
   m_Children:
   - {fileID: 31648987}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 165
+  m_RootOrder: 146
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &581124930
 BoxCollider2D:
@@ -15100,7 +15389,7 @@ Transform:
   m_Children:
   - {fileID: 1931877465}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 143
+  m_RootOrder: 128
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &591202059
 BoxCollider2D:
@@ -15442,7 +15731,7 @@ Transform:
   m_Children:
   - {fileID: 1085015144}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 144
+  m_RootOrder: 129
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &605202917
 BoxCollider2D:
@@ -15616,7 +15905,7 @@ Transform:
   m_Children:
   - {fileID: 192614934}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 252
+  m_RootOrder: 224
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &606217428
 BoxCollider2D:
@@ -15706,7 +15995,7 @@ Transform:
   m_Children:
   - {fileID: 1598337409}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 212
+  m_RootOrder: 184
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &606888397
 BoxCollider2D:
@@ -15796,7 +16085,7 @@ Transform:
   m_Children:
   - {fileID: 1482563963}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 255
+  m_RootOrder: 227
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &611274545
 BoxCollider2D:
@@ -16402,7 +16691,7 @@ Transform:
   m_Children:
   - {fileID: 2133288078}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 222
+  m_RootOrder: 194
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &634926806
 BoxCollider2D:
@@ -16744,7 +17033,7 @@ Transform:
   m_Children:
   - {fileID: 1498608828}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 119
+  m_RootOrder: 108
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &648242501
 BoxCollider2D:
@@ -17092,7 +17381,7 @@ Transform:
   m_Children:
   - {fileID: 357997158}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 125
+  m_RootOrder: 114
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &660672264
 BoxCollider2D:
@@ -17182,7 +17471,7 @@ Transform:
   m_Children:
   - {fileID: 960824286}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 241
+  m_RootOrder: 213
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &661311032
 BoxCollider2D:
@@ -18039,7 +18328,7 @@ Transform:
   m_Children:
   - {fileID: 940305921}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 232
+  m_RootOrder: 204
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &689659215
 BoxCollider2D:
@@ -18219,7 +18508,7 @@ Transform:
   m_Children:
   - {fileID: 213971474}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 227
+  m_RootOrder: 199
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &692498786
 BoxCollider2D:
@@ -19189,8 +19478,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 686334123}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 127
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &739496667
 BoxCollider2D:
@@ -19364,7 +19653,7 @@ Transform:
   m_Children:
   - {fileID: 1528468673}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 256
+  m_RootOrder: 228
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &743051514
 BoxCollider2D:
@@ -19848,6 +20137,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &761916582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 761916583}
+  - component: {fileID: 761916585}
+  - component: {fileID: 761916584}
+  m_Layer: 5
+  m_Name: BellImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &761916583
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761916582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 600, y: -233.2}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &761916584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761916582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 142507021, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &761916585
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761916582}
+  m_CullTransparentMesh: 1
 --- !u!1 &762315450
 GameObject:
   m_ObjectHideFlags: 0
@@ -19880,7 +20245,7 @@ Transform:
   m_Children:
   - {fileID: 1363882172}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 203
+  m_RootOrder: 175
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &762315453
 BoxCollider2D:
@@ -20222,7 +20587,7 @@ Transform:
   m_Children:
   - {fileID: 2140131399}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 237
+  m_RootOrder: 209
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &770405263
 BoxCollider2D:
@@ -20364,6 +20729,141 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &772467152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 772467153}
+  - component: {fileID: 772467155}
+  - component: {fileID: 772467154}
+  m_Layer: 5
+  m_Name: LevelText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &772467153
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772467152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 632, y: 374}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &772467154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772467152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'LVL: 1'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32
+  m_fontSizeBase: 32
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &772467155
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772467152}
+  m_CullTransparentMesh: 1
 --- !u!1 &774769279
 GameObject:
   m_ObjectHideFlags: 0
@@ -20569,7 +21069,7 @@ Transform:
   m_Children:
   - {fileID: 1566324842}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 128
+  m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &778620111
 BoxCollider2D:
@@ -20659,7 +21159,7 @@ Transform:
   m_Children:
   - {fileID: 144278384}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 158
+  m_RootOrder: 141
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &780778259
 BoxCollider2D:
@@ -21123,7 +21623,7 @@ Transform:
   m_Children:
   - {fileID: 799305855}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 112
+  m_RootOrder: 103
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &797681512
 BoxCollider2D:
@@ -21381,7 +21881,7 @@ Transform:
   m_Children:
   - {fileID: 2012484347}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 145
+  m_RootOrder: 130
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &809246461
 BoxCollider2D:
@@ -21555,7 +22055,7 @@ Transform:
   m_Children:
   - {fileID: 1595338553}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 220
+  m_RootOrder: 192
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &815068572
 BoxCollider2D:
@@ -22279,8 +22779,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 272958002}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 142
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &847135760
 BoxCollider2D:
@@ -22370,7 +22870,7 @@ Transform:
   m_Children:
   - {fileID: 459457386}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 149
+  m_RootOrder: 134
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &848490060
 BoxCollider2D:
@@ -22976,7 +23476,7 @@ Transform:
   m_Children:
   - {fileID: 1770955036}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 189
+  m_RootOrder: 161
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &873212176
 BoxCollider2D:
@@ -23066,7 +23566,7 @@ Transform:
   m_Children:
   - {fileID: 156383586}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 117
+  m_RootOrder: 106
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &887538815
 BoxCollider2D:
@@ -23156,7 +23656,7 @@ Transform:
   m_Children:
   - {fileID: 1610856129}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 148
+  m_RootOrder: 133
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &889343963
 BoxCollider2D:
@@ -23214,6 +23714,82 @@ MonoBehaviour:
   isSideNode: 0
   isPowerPellet: 0
   powerPelletBlinkingTimer: 0
+--- !u!1 &894359131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 894359132}
+  - component: {fileID: 894359134}
+  - component: {fileID: 894359133}
+  m_Layer: 5
+  m_Name: CherryImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &894359132
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894359131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 586.2, y: 308.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &894359133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894359131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1830568742, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0.906
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &894359134
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894359131}
+  m_CullTransparentMesh: 1
 --- !u!1 &897297439
 GameObject:
   m_ObjectHideFlags: 0
@@ -23336,7 +23912,7 @@ Transform:
   m_Children:
   - {fileID: 797172747}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 242
+  m_RootOrder: 214
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &898910361
 BoxCollider2D:
@@ -23509,8 +24085,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 863593051}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 93
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &902685613
 BoxCollider2D:
@@ -24032,7 +24608,7 @@ Transform:
   m_Children:
   - {fileID: 1112857467}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 230
+  m_RootOrder: 202
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &919032518
 BoxCollider2D:
@@ -24380,7 +24956,7 @@ Transform:
   m_Children:
   - {fileID: 1660463934}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 176
+  m_RootOrder: 155
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &924210447
 BoxCollider2D:
@@ -24722,7 +25298,7 @@ Transform:
   m_Children:
   - {fileID: 415580715}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 153
+  m_RootOrder: 136
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &963868320
 BoxCollider2D:
@@ -25278,8 +25854,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1411606999}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 182
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &974362924
 BoxCollider2D:
@@ -25632,8 +26208,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 531213639}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 150
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &983427388
 BoxCollider2D:
@@ -25723,7 +26299,7 @@ Transform:
   m_Children:
   - {fileID: 1065803568}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 135
+  m_RootOrder: 122
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &983865546
 BoxCollider2D:
@@ -25896,7 +26472,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 141
+  m_RootOrder: 127
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &985073321
 BoxCollider2D:
@@ -26326,8 +26902,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 970422456}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 115
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &990944984
 BoxCollider2D:
@@ -26501,7 +27077,7 @@ Transform:
   m_Children:
   - {fileID: 748729464}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 114
+  m_RootOrder: 105
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &994536725
 BoxCollider2D:
@@ -26591,7 +27167,7 @@ Transform:
   m_Children:
   - {fileID: 923092924}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 228
+  m_RootOrder: 200
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &995642069
 BoxCollider2D:
@@ -26681,7 +27257,7 @@ Transform:
   m_Children:
   - {fileID: 1533074732}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 209
+  m_RootOrder: 181
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &997745925
 BoxCollider2D:
@@ -26770,8 +27346,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 55133822}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 171
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &998444771
 BoxCollider2D:
@@ -26951,7 +27527,7 @@ Transform:
   m_Children:
   - {fileID: 2038778188}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 155
+  m_RootOrder: 138
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1003706514
 BoxCollider2D:
@@ -27009,6 +27585,82 @@ MonoBehaviour:
   isSideNode: 0
   isPowerPellet: 0
   powerPelletBlinkingTimer: 0
+--- !u!1 &1009398751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1009398752}
+  - component: {fileID: 1009398754}
+  - component: {fileID: 1009398753}
+  m_Layer: 5
+  m_Name: KeyImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1009398752
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009398751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 600, y: -337.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1009398753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009398751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 223810583, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1009398754
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009398751}
+  m_CullTransparentMesh: 1
 --- !u!1 &1014523260
 GameObject:
   m_ObjectHideFlags: 0
@@ -27377,7 +28029,7 @@ Transform:
   m_Children:
   - {fileID: 2057684827}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 206
+  m_RootOrder: 178
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1029401840
 BoxCollider2D:
@@ -27803,7 +28455,7 @@ Transform:
   m_Children:
   - {fileID: 103948866}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 173
+  m_RootOrder: 152
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1050724945
 BoxCollider2D:
@@ -28325,7 +28977,7 @@ Transform:
   m_Children:
   - {fileID: 5565484}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 199
+  m_RootOrder: 171
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1087331793
 BoxCollider2D:
@@ -28925,7 +29577,7 @@ Transform:
   m_Children:
   - {fileID: 1090052053}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 129
+  m_RootOrder: 116
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1098428650
 BoxCollider2D:
@@ -29393,7 +30045,7 @@ Transform:
   m_Children:
   - {fileID: 565243633}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 234
+  m_RootOrder: 206
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1118463339
 BoxCollider2D:
@@ -30189,8 +30841,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1253329462}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 96
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1148922268
 BoxCollider2D:
@@ -30280,7 +30932,7 @@ Transform:
   m_Children:
   - {fileID: 685475070}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 223
+  m_RootOrder: 195
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1150799525
 BoxCollider2D:
@@ -30718,7 +31370,7 @@ Transform:
   m_Children:
   - {fileID: 537945100}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 211
+  m_RootOrder: 183
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1168423825
 BoxCollider2D:
@@ -30897,7 +31549,7 @@ Transform:
   m_Children:
   - {fileID: 1133105376}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 134
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1175411713
 BoxCollider2D:
@@ -31509,7 +32161,7 @@ Transform:
   m_Children:
   - {fileID: 1627126444}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 146
+  m_RootOrder: 131
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1193280998
 BoxCollider2D:
@@ -31856,7 +32508,7 @@ Transform:
   m_Children:
   - {fileID: 2143051914}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 130
+  m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1199999033
 BoxCollider2D:
@@ -32036,7 +32688,7 @@ Transform:
   m_Children:
   - {fileID: 1445684909}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 118
+  m_RootOrder: 107
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1206643214
 BoxCollider2D:
@@ -32389,7 +33041,7 @@ Transform:
   m_Children:
   - {fileID: 1296406555}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 175
+  m_RootOrder: 154
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1216223886
 BoxCollider2D:
@@ -32646,8 +33298,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 475867830}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 187
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1229728885
 BoxCollider2D:
@@ -33001,7 +33653,7 @@ Transform:
   m_Children:
   - {fileID: 1327154834}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 160
+  m_RootOrder: 143
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1242400630
 BoxCollider2D:
@@ -33091,7 +33743,7 @@ Transform:
   m_Children:
   - {fileID: 1776551115}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 169
+  m_RootOrder: 150
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1244918555
 BoxCollider2D:
@@ -33271,7 +33923,7 @@ Transform:
   m_Children:
   - {fileID: 1887084268}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 197
+  m_RootOrder: 169
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1247910922
 BoxCollider2D:
@@ -33713,7 +34365,7 @@ Transform:
   m_Children:
   - {fileID: 245695552}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 154
+  m_RootOrder: 137
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1264162078
 BoxCollider2D:
@@ -34066,7 +34718,7 @@ Transform:
   m_Children:
   - {fileID: 1376967566}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 168
+  m_RootOrder: 149
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1291549187
 BoxCollider2D:
@@ -34940,7 +35592,7 @@ Transform:
   m_Children:
   - {fileID: 447992190}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 213
+  m_RootOrder: 185
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1321558672
 BoxCollider2D:
@@ -35712,7 +36364,7 @@ Transform:
   m_Children:
   - {fileID: 91284738}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 167
+  m_RootOrder: 148
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1343126919
 BoxCollider2D:
@@ -36312,7 +36964,7 @@ Transform:
   m_Children:
   - {fileID: 1333369784}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 133
+  m_RootOrder: 120
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1359298626
 BoxCollider2D:
@@ -36660,7 +37312,7 @@ Transform:
   m_Children:
   - {fileID: 1973648172}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 178
+  m_RootOrder: 157
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1371856599
 BoxCollider2D:
@@ -36749,8 +37401,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1862982502}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 186
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1373471337
 BoxCollider2D:
@@ -36840,7 +37492,7 @@ Transform:
   m_Children:
   - {fileID: 1874388436}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 257
+  m_RootOrder: 229
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1373948031
 BoxCollider2D:
@@ -37536,7 +38188,7 @@ Transform:
   m_Children:
   - {fileID: 988512905}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 104
+  m_RootOrder: 97
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1387923642
 BoxCollider2D:
@@ -38147,7 +38799,7 @@ Transform:
   m_Children:
   - {fileID: 1093582889}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 229
+  m_RootOrder: 201
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1408162234
 BoxCollider2D:
@@ -38614,7 +39266,7 @@ Transform:
   m_Children:
   - {fileID: 850867957}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 208
+  m_RootOrder: 180
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1414688129
 BoxCollider2D:
@@ -38794,7 +39446,7 @@ Transform:
   m_Children:
   - {fileID: 1471724875}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 139
+  m_RootOrder: 125
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1429734192
 BoxCollider2D:
@@ -38884,7 +39536,7 @@ Transform:
   m_Children:
   - {fileID: 308875011}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 249
+  m_RootOrder: 221
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1438758790
 BoxCollider2D:
@@ -39664,7 +40316,7 @@ Transform:
   m_Children:
   - {fileID: 421854969}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 198
+  m_RootOrder: 170
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1466439068
 BoxCollider2D:
@@ -39843,8 +40495,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 373740563}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 164
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1467344221
 BoxCollider2D:
@@ -40456,7 +41108,7 @@ Transform:
   m_Children:
   - {fileID: 1963781915}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 105
+  m_RootOrder: 98
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1490994458
 BoxCollider2D:
@@ -41500,7 +42152,7 @@ Transform:
   m_Children:
   - {fileID: 1188033055}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 226
+  m_RootOrder: 198
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1520402388
 BoxCollider2D:
@@ -42888,7 +43540,7 @@ Transform:
   m_Children:
   - {fileID: 990320323}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 157
+  m_RootOrder: 140
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1573124865
 BoxCollider2D:
@@ -43167,7 +43819,7 @@ Transform:
   m_Children:
   - {fileID: 755712698}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 231
+  m_RootOrder: 203
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1577687916
 BoxCollider2D:
@@ -43385,7 +44037,7 @@ Transform:
   m_Children:
   - {fileID: 731407690}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 111
+  m_RootOrder: 102
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1587400500
 BoxCollider2D:
@@ -43643,7 +44295,7 @@ Transform:
   m_Children:
   - {fileID: 681980138}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 177
+  m_RootOrder: 156
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1600354650
 BoxCollider2D:
@@ -43733,7 +44385,7 @@ Transform:
   m_Children:
   - {fileID: 276836896}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 214
+  m_RootOrder: 186
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1607764221
 BoxCollider2D:
@@ -43907,7 +44559,7 @@ Transform:
   m_Children:
   - {fileID: 676349635}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 101
+  m_RootOrder: 94
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1615456281
 BoxCollider2D:
@@ -43965,6 +44617,82 @@ MonoBehaviour:
   isSideNode: 0
   isPowerPellet: 0
   powerPelletBlinkingTimer: 0
+--- !u!1 &1617915082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1617915083}
+  - component: {fileID: 1617915085}
+  - component: {fileID: 1617915084}
+  m_Layer: 5
+  m_Name: GalaxianImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1617915083
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617915082}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 600, y: -139.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1617915084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617915082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -440730874, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0.965
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1617915085
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617915082}
+  m_CullTransparentMesh: 1
 --- !u!1 &1618583704
 GameObject:
   m_ObjectHideFlags: 0
@@ -44085,13 +44813,6 @@ Transform:
   - {fileID: 1936332010}
   - {fileID: 2054630136}
   - {fileID: 1544773337}
-  - {fileID: 2114648892}
-  - {fileID: 902685611}
-  - {fileID: 146319621}
-  - {fileID: 2107598251}
-  - {fileID: 1148922266}
-  - {fileID: 1858923641}
-  - {fileID: 1935647698}
   - {fileID: 231109403}
   - {fileID: 145495946}
   - {fileID: 1615456279}
@@ -44100,16 +44821,12 @@ Transform:
   - {fileID: 1387923640}
   - {fileID: 1490994456}
   - {fileID: 270468311}
-  - {fileID: 249848696}
-  - {fileID: 460771834}
   - {fileID: 2021291962}
   - {fileID: 544495265}
   - {fileID: 1587400498}
   - {fileID: 797681510}
   - {fileID: 110002133}
   - {fileID: 994536723}
-  - {fileID: 990944982}
-  - {fileID: 567723230}
   - {fileID: 887538813}
   - {fileID: 1206643212}
   - {fileID: 648242499}
@@ -44119,8 +44836,6 @@ Transform:
   - {fileID: 1951134991}
   - {fileID: 2061101280}
   - {fileID: 660672262}
-  - {fileID: 2027325478}
-  - {fileID: 739496665}
   - {fileID: 778620109}
   - {fileID: 1098428648}
   - {fileID: 1199999031}
@@ -44131,11 +44846,9 @@ Transform:
   - {fileID: 983865544}
   - {fileID: 218173505}
   - {fileID: 1641848704}
-  - {fileID: 1722316999}
   - {fileID: 1429734190}
   - {fileID: 1814885748}
   - {fileID: 985073319}
-  - {fileID: 847135758}
   - {fileID: 591202057}
   - {fileID: 605202915}
   - {fileID: 809246459}
@@ -44143,8 +44856,6 @@ Transform:
   - {fileID: 489945724}
   - {fileID: 889343961}
   - {fileID: 848490058}
-  - {fileID: 983427386}
-  - {fileID: 144977852}
   - {fileID: 413644509}
   - {fileID: 963868318}
   - {fileID: 1264162076}
@@ -44156,16 +44867,12 @@ Transform:
   - {fileID: 1242400628}
   - {fileID: 157522783}
   - {fileID: 553947852}
-  - {fileID: 2045071099}
-  - {fileID: 1467344219}
   - {fileID: 581124928}
   - {fileID: 54024530}
   - {fileID: 1343126917}
   - {fileID: 1291549185}
   - {fileID: 1244918553}
   - {fileID: 551015428}
-  - {fileID: 998444769}
-  - {fileID: 352214666}
   - {fileID: 1050724943}
   - {fileID: 1742136298}
   - {fileID: 1216223884}
@@ -44174,13 +44881,6 @@ Transform:
   - {fileID: 1371856597}
   - {fileID: 395322665}
   - {fileID: 390488244}
-  - {fileID: 2123945633}
-  - {fileID: 974362922}
-  - {fileID: 479568449}
-  - {fileID: 138206304}
-  - {fileID: 203916577}
-  - {fileID: 1373471335}
-  - {fileID: 1229728883}
   - {fileID: 4703712}
   - {fileID: 873212174}
   - {fileID: 1636657856}
@@ -44286,7 +44986,7 @@ Transform:
   m_Children:
   - {fileID: 292837319}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 239
+  m_RootOrder: 211
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1620981950
 BoxCollider2D:
@@ -44376,7 +45076,7 @@ Transform:
   m_Children:
   - {fileID: 1552383465}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 132
+  m_RootOrder: 119
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1626017072
 BoxCollider2D:
@@ -44634,7 +45334,7 @@ Transform:
   m_Children:
   - {fileID: 1411755157}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 122
+  m_RootOrder: 111
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1628387810
 BoxCollider2D:
@@ -44808,7 +45508,7 @@ Transform:
   m_Children:
   - {fileID: 591595797}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 224
+  m_RootOrder: 196
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1634170965
 BoxCollider2D:
@@ -44898,7 +45598,7 @@ Transform:
   m_Children:
   - {fileID: 739395259}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 190
+  m_RootOrder: 162
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1636657858
 BoxCollider2D:
@@ -44988,7 +45688,7 @@ Transform:
   m_Children:
   - {fileID: 1344314216}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 244
+  m_RootOrder: 216
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1638884427
 BoxCollider2D:
@@ -45077,7 +45777,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 137
+  m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1641848706
 BoxCollider2D:
@@ -45574,7 +46274,7 @@ GameObject:
   - component: {fileID: 1660540806}
   - component: {fileID: 1660540805}
   m_Layer: 5
-  m_Name: Button
+  m_Name: NewGameButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45984,7 +46684,7 @@ Transform:
   m_Children:
   - {fileID: 1955362958}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 196
+  m_RootOrder: 168
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1667198811
 BoxCollider2D:
@@ -46074,7 +46774,7 @@ Transform:
   m_Children:
   - {fileID: 1035054942}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 253
+  m_RootOrder: 225
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1668907517
 BoxCollider2D:
@@ -46511,7 +47211,7 @@ Transform:
   m_Children:
   - {fileID: 1345591716}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 250
+  m_RootOrder: 222
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1703259099
 BoxCollider2D:
@@ -46600,8 +47300,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 158910703}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 138
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1722317001
 BoxCollider2D:
@@ -46781,7 +47481,7 @@ Transform:
   m_Children:
   - {fileID: 1576273883}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 216
+  m_RootOrder: 188
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1736770505
 BoxCollider2D:
@@ -46871,7 +47571,7 @@ Transform:
   m_Children:
   - {fileID: 375229450}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 174
+  m_RootOrder: 153
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1742136300
 BoxCollider2D:
@@ -47135,7 +47835,7 @@ Transform:
   m_Children:
   - {fileID: 27987060}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 236
+  m_RootOrder: 208
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1765949379
 BoxCollider2D:
@@ -47483,7 +48183,7 @@ Transform:
   m_Children:
   - {fileID: 631200598}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 246
+  m_RootOrder: 218
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1778238777
 BoxCollider2D:
@@ -47831,7 +48531,7 @@ Transform:
   m_Children:
   - {fileID: 1192961725}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 202
+  m_RootOrder: 174
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1783859514
 BoxCollider2D:
@@ -47988,6 +48688,15 @@ RectTransform:
   - {fileID: 1554020578}
   - {fileID: 1799520882}
   - {fileID: 1660540804}
+  - {fileID: 772467153}
+  - {fileID: 894359132}
+  - {fileID: 143765382}
+  - {fileID: 319002644}
+  - {fileID: 1902986821}
+  - {fileID: 481573575}
+  - {fileID: 1617915083}
+  - {fileID: 761916583}
+  - {fileID: 1009398752}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48575,7 +49284,7 @@ Transform:
   m_Children:
   - {fileID: 741511893}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 140
+  m_RootOrder: 126
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1814885750
 BoxCollider2D:
@@ -48665,7 +49374,7 @@ Transform:
   m_Children:
   - {fileID: 2103064277}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 238
+  m_RootOrder: 210
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1821409831
 BoxCollider2D:
@@ -49097,7 +49806,7 @@ Transform:
   m_Children:
   - {fileID: 1902549134}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 215
+  m_RootOrder: 187
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1840718503
 BoxCollider2D:
@@ -49187,7 +49896,7 @@ Transform:
   m_Children:
   - {fileID: 1088178630}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 103
+  m_RootOrder: 96
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1854196407
 BoxCollider2D:
@@ -49444,8 +50153,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1353456597}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 97
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1858923643
 BoxCollider2D:
@@ -50277,7 +50986,7 @@ Transform:
   m_Children:
   - {fileID: 2014522079}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 193
+  m_RootOrder: 165
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1895936773
 BoxCollider2D:
@@ -50451,7 +51160,7 @@ Transform:
   m_Children:
   - {fileID: 159804251}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 207
+  m_RootOrder: 179
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1898860320
 BoxCollider2D:
@@ -50593,6 +51302,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1902986820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1902986821}
+  - component: {fileID: 1902986823}
+  - component: {fileID: 1902986822}
+  m_Layer: 5
+  m_Name: AppleImg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1902986821
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902986820}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1789799028}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 594.5, y: 44}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1902986822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902986820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 720748670, guid: 19e5a3ffab5426743926ad9f262122a1, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 0.965
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1902986823
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902986820}
+  m_CullTransparentMesh: 1
 --- !u!1 &1912272478
 GameObject:
   m_ObjectHideFlags: 0
@@ -50889,7 +51674,7 @@ Transform:
   m_Children:
   - {fileID: 83601719}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 200
+  m_RootOrder: 172
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1922536114
 BoxCollider2D:
@@ -51584,8 +52369,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 455602020}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 98
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1935647700
 BoxCollider2D:
@@ -52197,7 +52982,7 @@ Transform:
   m_Children:
   - {fileID: 1543360596}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 123
+  m_RootOrder: 112
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1951134993
 BoxCollider2D:
@@ -52796,7 +53581,7 @@ Transform:
   m_Children:
   - {fileID: 1656903494}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 120
+  m_RootOrder: 109
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1982656424
 BoxCollider2D:
@@ -53396,7 +54181,7 @@ Transform:
   m_Children:
   - {fileID: 1211026891}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 109
+  m_RootOrder: 100
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2021291964
 BoxCollider2D:
@@ -53485,8 +54270,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 271595588}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 126
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2027325480
 BoxCollider2D:
@@ -53576,7 +54361,7 @@ Transform:
   m_Children:
   - {fileID: 1066846732}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 210
+  m_RootOrder: 182
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2029243909
 BoxCollider2D:
@@ -53749,8 +54534,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1097291603}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 163
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2045071101
 BoxCollider2D:
@@ -54014,7 +54799,7 @@ Transform:
   m_Children:
   - {fileID: 419793107}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 156
+  m_RootOrder: 139
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2058871260
 BoxCollider2D:
@@ -54104,7 +54889,7 @@ Transform:
   m_Children:
   - {fileID: 914540939}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 124
+  m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2061101282
 BoxCollider2D:
@@ -54436,7 +55221,7 @@ Transform:
   m_Children:
   - {fileID: 1511704826}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 243
+  m_RootOrder: 215
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2074911678
 BoxCollider2D:
@@ -54778,7 +55563,7 @@ Transform:
   m_Children:
   - {fileID: 1783098507}
   m_Father: {fileID: 1618583705}
-  m_RootOrder: 218
+  m_RootOrder: 190
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2104030313
 BoxCollider2D:
@@ -54867,8 +55652,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1949956218}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 95
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2107598253
 BoxCollider2D:
@@ -54957,8 +55742,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 859280593}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 92
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2114648894
 BoxCollider2D:
@@ -55047,8 +55832,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1336863416}
-  m_Father: {fileID: 1618583705}
-  m_RootOrder: 181
+  m_Father: {fileID: 38729746}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2123945635
 BoxCollider2D:
